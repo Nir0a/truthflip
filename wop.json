@@ -2,7 +2,7 @@
   "categories": {
     "normal": {
       "name": "Normal",
-      "icon": "◌",
+      "icon": "•",
       "description": "Klassische Fragen und unkomplizierte Challenges.",
       "truth": [
         "Was war dein peinlichster Moment?",
@@ -93,56 +93,67 @@
     "freaky": {
       "name": "Freaky",
       "icon": "♥",
-      "description": "Romantische und leicht freche Aufgaben.",
+      "description": "Flirty, freche und deutlich persönlichere Fragen und Challenges.",
       "truth": [
-        "Wer aus der Runde ist deiner Meinung nach am sympathischsten?",
-        "Was findest du bei einer Person besonders attraktiv?",
-        "Hast du schon einmal für jemanden geschwärmt?",
-        "Was wäre für dich ein perfektes Date?",
-        "Welche romantische Geste findest du besonders süß?",
-        "Was ist dein größtes Green Flag bei einer Person?",
-        "Was wäre dein perfekter erster Kuss?",
-        "Wer aus der Runde könnte dich am ehesten zum Lachen bringen?",
-        "Was ist das süßeste Kompliment, das du bekommen hast?",
-        "Würdest du eher Händchen halten oder umarmt werden?"
+        "Welche Eigenschaft findest du bei einer Person sofort attraktiv?",
+        "Wann hattest du zuletzt einen richtigen Crush?",
+        "Was ist dein größter Turn-on bei einer Person?",
+        "Was ist dein größtes Green Flag bei einem potenziellen Date?",
+        "Was ist für dich die intensivste Form von Flirten?",
+        "Welche Art von Blickkontakt findest du besonders anziehend?",
+        "Was müsste jemand tun, damit du sofort nervös wirst?",
+        "Was ist dein attraktivstes Merkmal an dir selbst?",
+        "Welche Art von Kompliment funktioniert bei dir am besten?",
+        "Würdest du eher jemanden zuerst anschreiben oder darauf warten, dass die andere Person den ersten Schritt macht?",
+        "Was macht einen Kuss für dich besonders?",
+        "Welche romantische Situation findest du besonders aufregend?"
       ],
       "dare": [
-        "Gib einer Person deiner Wahl ein ehrliches Kompliment.",
-        "Halte 20 Sekunden Händchen mit einer Person deiner Wahl.",
-        "Gib einer Person deiner Wahl einen freundschaftlichen Wangenkuss, wenn beide einverstanden sind.",
         "Halte 20 Sekunden intensiven Blickkontakt mit einer Person deiner Wahl.",
-        "Mach einer Person deiner Wahl ein besonders süßes Kompliment.",
-        "Tanze 20 Sekunden langsam mit einer Person deiner Wahl.",
-        "Gib einer Person deiner Wahl eine freundschaftliche Umarmung, wenn beide einverstanden sind.",
-        "Sag einer Person deiner Wahl drei Dinge, die du an ihr magst.",
+        "Mach einer Person deiner Wahl ein besonders persönliches Kompliment.",
+        "Flirte 20 Sekunden spielerisch mit einer Person deiner Wahl.",
+        "Sag einer Person deiner Wahl, was du an ihr besonders attraktiv findest.",
+        "Tanze 30 Sekunden langsam mit einer Person deiner Wahl, wenn beide einverstanden sind.",
         "Setz dich für eine Runde neben eine Person deiner Wahl.",
-        "Mach für eine Person deiner Wahl eine kleine romantische Geste."
+        "Sag einer Person deiner Wahl drei Dinge, die du an ihr attraktiv findest.",
+        "Mach einer Person deiner Wahl deinen besten Flirt-Spruch.",
+        "Halte 20 Sekunden lang Händchen mit einer Person deiner Wahl, wenn beide einverstanden sind.",
+        "Schau einer Person deiner Wahl 30 Sekunden in die Augen, ohne wegzusehen.",
+        "Flüstere einer Person deiner Wahl ein Kompliment zu, wenn sie damit einverstanden ist.",
+        "Lass die Gruppe entscheiden, wem du ein besonders charmantes Kompliment machst."
       ]
     },
 
     "extreme": {
       "name": "Extrem Freaky",
       "icon": "🔥",
-      "description": "Mutige romantische Challenges für die Gruppe.",
+      "description": "Sehr intensive, verführerische und mutige Challenges für Erwachsene.",
       "truth": [
         "Wer aus der Runde wäre am ehesten dein Date?",
-        "Mit wem aus der Runde würdest du gerne einmal einen romantischen Abend verbringen?",
-        "Was wäre das Mutigste, das du bei einem Date machen würdest?",
-        "Was ist für dich romantischer: ein Kuss oder eine lange Umarmung?",
-        "Was wäre dein absolutes Traumdate?",
-        "Was müsste eine Person tun, damit du sofort nervös wirst?",
-        "Was ist das Romantischste, das du jemals gemacht hast?",
-        "Welche Art von Kompliment bringt dich sofort zum Lächeln?"
+        "Mit wem aus der Runde würdest du am ehesten auf ein Date gehen?",
+        "Welche Person aus der Runde findest du am attraktivsten?",
+        "Was ist das Mutigste, das du beim Flirten schon einmal gemacht hast?",
+        "Was bringt dich beim Flirten sofort aus dem Konzept?",
+        "Was wäre für dich ein nahezu perfektes Date?",
+        "Welche Art von Berührung findest du besonders romantisch?",
+        "Was wäre für dich ein unvergesslicher erster Kuss?",
+        "Was ist etwas, das du dich beim Flirten bisher noch nicht getraut hast?",
+        "Welche Person aus der Runde könnte dich am ehesten schwach werden lassen?",
+        "Was ist für dich der Unterschied zwischen süßem und sehr intensivem Flirten?",
+        "Was wäre eine Situation, in der du definitiv den ersten Schritt machen würdest?"
       ],
       "dare": [
         "Halte 30 Sekunden intensiven Blickkontakt mit einer Person deiner Wahl.",
-        "Mach einer Person deiner Wahl ein sehr persönliches Kompliment.",
-        "Tanze 30 Sekunden mit einer Person deiner Wahl.",
-        "Halte 30 Sekunden Händchen mit einer Person deiner Wahl.",
-        "Sag einer Person deiner Wahl, warum du sie sympathisch findest.",
-        "Mach einer Person deiner Wahl eine kleine romantische Überraschung.",
+        "Mach einer Person deiner Wahl ein sehr persönliches und charmantes Kompliment.",
+        "Flirte 30 Sekunden lang mit einer Person deiner Wahl.",
+        "Sag einer Person deiner Wahl, was du an ihr besonders attraktiv findest.",
         "Setz dich für die nächste Runde neben eine Person deiner Wahl.",
-        "Gib einer Person deiner Wahl eine lange freundschaftliche Umarmung, wenn beide einverstanden sind."
+        "Halte 30 Sekunden Händchen mit einer Person deiner Wahl, wenn beide einverstanden sind.",
+        "Mach einer Person deiner Wahl einen besonders mutigen Flirt-Spruch.",
+        "Schau einer Person deiner Wahl 45 Sekunden tief in die Augen.",
+        "Sag einer Person deiner Wahl etwas, das du dich normalerweise nicht trauen würdest zu sagen, solange es respektvoll bleibt.",
+        "Lass eine Person deiner Wahl entscheiden, welches charmante Kompliment du ihr machst.",
+        "Mach einer Person deiner Wahl eine kleine romantische Überraschung, wenn sie damit einverstanden ist."
       ]
     }
   }
