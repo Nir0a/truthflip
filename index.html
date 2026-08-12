@@ -432,14 +432,13 @@ p{
 }
 
 .turn-name{
-  font-size:32px;
-  font-weight:950;
+  font-size:25px;
+  font-weight:900;
   letter-spacing:-.04em;
   margin-top:4px;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  color:#ffffff;
 }
 
 .status-pill{
@@ -590,6 +589,11 @@ p{
     );
 }
 
+
+/* =========================================================
+   BEWEGTES LICHT AUF DER KARTE
+========================================================= */
+
 .card-shine{
   position:absolute;
   inset:-40%;
@@ -608,6 +612,9 @@ p{
   transform:translate3d(-10%,-10%,0);
 }
 
+
+/* Zweiter, weicher Glow */
+
 .card-shine::before{
   content:"";
   position:absolute;
@@ -623,6 +630,9 @@ p{
 
   animation:cardGlowMove 9s ease-in-out infinite;
 }
+
+
+/* Feiner Lichtstreifen */
 
 .card-shine::after{
   content:"";
@@ -642,6 +652,9 @@ p{
   transform:translateX(-35%);
   animation:cardSweep 5.5s ease-in-out infinite;
 }
+
+
+/* Hauptlicht bewegt sich über die Karte */
 
 @keyframes cardLightMove{
 
@@ -674,7 +687,11 @@ p{
       translate3d(-18%,-12%,0)
       rotate(0deg);
   }
+
 }
+
+
+/* Violetter Licht-Glow */
 
 @keyframes cardGlowMove{
 
@@ -693,7 +710,11 @@ p{
 
     opacity:.9;
   }
+
 }
+
+
+/* Lichtstreifen */
 
 @keyframes cardSweep{
 
@@ -728,7 +749,9 @@ p{
 
     opacity:0;
   }
+
 }
+
 
 .card-top{
   display:flex;
@@ -772,12 +795,10 @@ p{
 }
 
 .card-player{
-  font-size:30px;
-  line-height:1.1;
-  letter-spacing:-.03em;
-  color:#ffffff;
-  font-weight:950;
-  margin-bottom:12px;
+  font-size:18px;
+  color:#d8d6e2;
+  font-weight:800;
+  margin-bottom:10px;
 }
 
 .card-prompt{
@@ -843,10 +864,6 @@ p{
     0 8px 25px #ef444433;
 }
 
-.choice:disabled{
-  cursor:not-allowed;
-}
-
 .next-btn{
   width:100%;
   padding:16px;
@@ -891,6 +908,7 @@ p{
     opacity:1;
     transform:none;
   }
+
 }
 
 .modal{
@@ -997,21 +1015,15 @@ p{
     font-size:27px;
   }
 
-  .turn-name{
-    font-size:28px;
-  }
-
-  .card-player{
-    font-size:26px;
-  }
-
 }
+
 </style>
 </head>
 
 <body>
 
 <div class="app">
+
 
 <!-- =========================
      NAMEN
@@ -1354,6 +1366,8 @@ p{
         id="mainCard"
         class="main-card"
       >
+
+        <!-- BEWEGTES LICHT -->
 
         <div class="card-shine"></div>
 
@@ -2062,30 +2076,6 @@ function getActiveCategories(){
 
 
 /* =========================================================
-   WAHRHEITS-RUNDE
-========================================================= */
-
-function isTruthOnly(){
-
-  const active =
-    getActiveCategories();
-
-  /*
-    Die Wahrheits-Runde erzwingt nur dann
-    Wahrheit, wenn sie die einzige aktive
-    Kategorie ist.
-  */
-
-  return (
-    active.length === 1 &&
-    decks[active[0]] &&
-    decks[active[0]].truthOnly === true
-  );
-
-}
-
-
-/* =========================================================
    PFLICHT-RUNDEN
 ========================================================= */
 
@@ -2108,20 +2098,6 @@ function toggleMandatoryRounds(){
 
 
 function startNewRound(){
-
-  /*
-    Eine Wahrheits-Runde kann keine
-    zufällige Pflicht-Runde werden.
-  */
-
-  if(isTruthOnly()){
-
-    state.mandatoryRound = false;
-
-    return;
-
-  }
-
 
   if(
     state.mandatoryRoundsEnabled
@@ -2231,35 +2207,6 @@ function showCurrentTurn(first=false){
       state.currentPlayer;
 
 
-  const activeCategories =
-    getActiveCategories();
-
-
-  if(
-    activeCategories.length === 1
-  ){
-
-    document
-      .getElementById(
-        'categoryPill'
-      )
-      .textContent =
-        categoryName(
-          activeCategories[0]
-        );
-
-  }else{
-
-    document
-      .getElementById(
-        'categoryPill'
-      )
-      .textContent =
-        'Gemischt';
-
-  }
-
-
   const banner =
     document.getElementById(
       'mandatoryRoundBanner'
@@ -2282,13 +2229,9 @@ function showCurrentTurn(first=false){
       'cardKicker'
     )
     .textContent =
-      isTruthOnly()
-        ? 'Wahrheits-Runde'
-        : (
-          state.mandatoryRound
-            ? 'Pflicht-Runde'
-            : 'Jetzt ist dran'
-        );
+      state.mandatoryRound
+        ? 'Pflicht-Runde'
+        : 'Jetzt ist dran';
 
 
   document
@@ -2304,13 +2247,9 @@ function showCurrentTurn(first=false){
       'cardPrompt'
     )
     .textContent =
-      isTruthOnly()
-        ? 'Wähle Wahrheit.'
-        : (
-          state.mandatoryRound
-            ? 'Du musst Pflicht wählen.'
-            : 'Wähle Wahrheit oder Pflicht.'
-        );
+      state.mandatoryRound
+        ? 'Du musst Pflicht wählen.'
+        : 'Wähle Wahrheit oder Pflicht.';
 
 
   document
@@ -2318,13 +2257,9 @@ function showCurrentTurn(first=false){
       'typeBadge'
     )
     .textContent =
-      isTruthOnly()
-        ? 'WAHRHEITS-RUNDE'
-        : (
-          state.mandatoryRound
-            ? 'PFLICHT-RUNDE'
-            : 'Wahrheit oder Pflicht'
-        );
+      state.mandatoryRound
+        ? 'PFLICHT-RUNDE'
+        : 'Wahrheit oder Pflicht';
 
 
   document
@@ -2444,84 +2379,33 @@ function updateChoiceButtons(){
     );
 
 
-  /*
-    Wahrheits-Runde:
-    Nur Wahrheit ist möglich.
-  */
-
-  if(isTruthOnly()){
-
-    truthButton.disabled = false;
-
-    truthButton.classList.remove(
-      'disabled'
-    );
-
-
-    dareButton.disabled = true;
-
-    dareButton.classList.add(
-      'disabled'
-    );
-
-    dareButton.classList.remove(
-      'mandatory-btn'
-    );
-
-
-    dareButton.textContent =
-      'Nur Wahrheit';
-
-
-    return;
-
-  }
-
-
-  /*
-    Normale Pflicht-Runde
-  */
-
   if(state.mandatoryRound){
 
     truthButton.disabled = true;
+
 
     truthButton.classList.add(
       'disabled'
     );
 
 
-    dareButton.disabled = false;
-
-    dareButton.classList.remove(
-      'disabled'
-    );
-
     dareButton.classList.add(
       'mandatory-btn'
     );
 
-
-    dareButton.textContent =
-      'Pflicht';
-
   }else{
 
     truthButton.disabled = false;
+
 
     truthButton.classList.remove(
       'disabled'
     );
 
 
-    dareButton.disabled = false;
-
     dareButton.classList.remove(
-      'disabled'
+      'mandatory-btn'
     );
-
-    dareButton.textContent =
-      'Pflicht';
 
   }
 
@@ -2533,20 +2417,6 @@ function updateChoiceButtons(){
 ========================================================= */
 
 function reveal(type){
-
-  if(
-    isTruthOnly() &&
-    type === 'dare'
-  ){
-
-    showToast(
-      'In der Wahrheits-Runde gibt es nur Wahrheit.'
-    );
-
-    return;
-
-  }
-
 
   if(
     state.mandatoryRound &&
@@ -2586,11 +2456,7 @@ function reveal(type){
     )
     .textContent =
       type === 'truth'
-        ? (
-          isTruthOnly()
-            ? 'Wahrheits-Runde'
-            : 'Ehrliche Antwort'
-        )
+        ? 'Ehrliche Antwort'
         : (
           state.mandatoryRound
             ? 'Pflicht-Runde'
@@ -3065,9 +2931,7 @@ function categoryName(cat){
 
     freaky:'Freaky',
 
-    extreme:'Extrem Freaky',
-
-    truthRound:'Wahrheits-Runde'
+    extreme:'Extrem Freaky'
 
   };
 
