@@ -24,7 +24,7 @@
 
 *{
   box-sizing:border-box;
-  -webkit-tap-highlight-color:transparent
+  -webkit-tap-highlight-color:transparent;
 }
 
 html,body{
@@ -33,25 +33,25 @@ html,body{
   min-height:100%;
   background:var(--bg);
   color:var(--text);
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
 
 body{
-  overscroll-behavior:none
+  overscroll-behavior:none;
 }
 
 button,input{
-  font:inherit
+  font:inherit;
 }
 
 button{
   border:0;
   color:inherit;
-  cursor:pointer
+  cursor:pointer;
 }
 
 .hidden{
-  display:none!important
+  display:none!important;
 }
 
 .app{
@@ -59,7 +59,7 @@ button{
   max-width:520px;
   min-height:100vh;
   margin:auto;
-  padding:18px 16px 30px
+  padding:18px 16px 30px;
 }
 
 .topbar{
@@ -67,7 +67,7 @@ button{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  margin-bottom:18px
+  margin-bottom:18px;
 }
 
 .brand{
@@ -75,7 +75,7 @@ button{
   align-items:center;
   gap:10px;
   font-weight:850;
-  letter-spacing:-.03em
+  letter-spacing:-.03em;
 }
 
 .brand-mark{
@@ -85,7 +85,7 @@ button{
   display:grid;
   place-items:center;
   background:linear-gradient(135deg,var(--purple),var(--pink));
-  box-shadow:0 8px 24px #8b5cf62e
+  box-shadow:0 8px 24px #8b5cf62e;
 }
 
 .icon-btn{
@@ -96,31 +96,25 @@ button{
   border:1px solid #292934;
   display:grid;
   place-items:center;
-  font-size:18px
+  font-size:18px;
 }
 
 .page{
   display:none;
-  animation:pageIn .28s ease
+  animation:pageIn .28s ease;
 }
 
 .page.active{
-  display:block
+  display:block;
 }
 
 @keyframes pageIn{
-  from{
-    opacity:0;
-    transform:translateY(10px)
-  }
-  to{
-    opacity:1;
-    transform:none
-  }
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
 }
 
 .hero{
-  padding:18px 2px 24px
+  padding:18px 2px 24px;
 }
 
 .eyebrow{
@@ -129,56 +123,56 @@ button{
   letter-spacing:.14em;
   color:#a8a8b4;
   font-weight:750;
-  margin-bottom:10px
+  margin-bottom:10px;
 }
 
 h1{
   font-size:39px;
   line-height:1.02;
   letter-spacing:-.05em;
-  margin:0 0 11px
+  margin:0 0 11px;
 }
 
 h2{
   font-size:22px;
   letter-spacing:-.03em;
-  margin:0 0 7px
+  margin:0 0 7px;
 }
 
 p{
   color:var(--muted);
   line-height:1.5;
-  margin:0
+  margin:0;
 }
 
 .card{
   background:linear-gradient(180deg,#1a1a22,#15151c);
   border:1px solid #2a2a34;
   border-radius:var(--radius);
-  box-shadow:0 16px 50px #00000035
+  box-shadow:0 16px 50px #00000035;
 }
 
 .setup-card{
   padding:18px;
-  margin-bottom:14px
+  margin-bottom:14px;
 }
 
 .section-title{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:14px
+  margin-bottom:14px;
 }
 
 .section-title span{
   font-size:12px;
   color:var(--muted);
-  font-weight:650
+  font-weight:650;
 }
 
 .input-row{
   display:flex;
-  gap:8px
+  gap:8px;
 }
 
 .text-input{
@@ -188,11 +182,11 @@ p{
   border:1px solid #30303b;
   background:#111117;
   color:var(--text);
-  outline:none
+  outline:none;
 }
 
 .text-input:focus{
-  border-color:#8b5cf6
+  border-color:#8b5cf6;
 }
 
 .add-btn{
@@ -200,14 +194,14 @@ p{
   border-radius:15px;
   background:linear-gradient(135deg,var(--purple),var(--pink));
   font-size:24px;
-  font-weight:800
+  font-weight:800;
 }
 
 .players{
   display:flex;
   flex-direction:column;
   gap:8px;
-  margin-top:14px
+  margin-top:14px;
 }
 
 .player-row{
@@ -217,7 +211,7 @@ p{
   padding:12px 13px;
   border-radius:15px;
   background:#1f1f27;
-  border:1px solid #282832
+  border:1px solid #282832;
 }
 
 .player-avatar{
@@ -228,23 +222,19 @@ p{
   place-items:center;
   font-weight:800;
   background:#29293a;
-  color:#ddd
+  color:#ddd;
 }
 
 .player-name{
   flex:1;
-  font-weight:700
+  font-weight:700;
 }
 
 .remove{
   background:transparent;
   color:#858591;
   font-size:20px;
-  padding:4px 7px
-}
-
-.remove:hover{
-  color:#fff
+  padding:4px 7px;
 }
 
 .empty{
@@ -252,7 +242,7 @@ p{
   text-align:center;
   color:#747480;
   border:1px dashed #30303a;
-  border-radius:15px
+  border-radius:15px;
 }
 
 .primary{
@@ -262,14 +252,14 @@ p{
   background:linear-gradient(135deg,var(--purple),var(--pink));
   font-weight:850;
   font-size:17px;
-  box-shadow:0 12px 30px #8b5cf62e
+  box-shadow:0 12px 30px #8b5cf62e;
 }
 
 .primary:active,
 .choice:active,
 .secondary:active,
 .icon-btn:active{
-  transform:scale(.98)
+  transform:scale(.98);
 }
 
 .secondary{
@@ -278,18 +268,18 @@ p{
   border-radius:16px;
   background:#202029;
   border:1px solid #30303a;
-  font-weight:750
+  font-weight:750;
 }
 
 .error{
   color:#fb7185;
   font-size:13px;
-  margin-top:10px
+  margin-top:10px;
 }
 
 .category-grid{
   display:grid;
-  gap:10px
+  gap:10px;
 }
 
 .category{
@@ -299,20 +289,20 @@ p{
   background:#1d1d25;
   border:1px solid #2b2b36;
   transition:.18s;
-  text-align:left
+  text-align:left;
 }
 
 .category.active{
   background:linear-gradient(145deg,#242036,#1c1c26);
   border-color:#6f51c9;
-  box-shadow:inset 0 0 0 1px #8b5cf62b
+  box-shadow:inset 0 0 0 1px #8b5cf62b;
 }
 
 .cat-top{
   display:flex;
   justify-content:space-between;
   gap:10px;
-  align-items:flex-start
+  align-items:flex-start;
 }
 
 .cat-icon{
@@ -322,98 +312,21 @@ p{
   display:grid;
   place-items:center;
   font-size:22px;
-  background:#2a2934
+  background:#2a2934;
 }
 
-.switch{
+.switch,
+.option-switch{
   width:47px;
   height:27px;
   border-radius:999px;
   background:#3a3a45;
   padding:3px;
   flex:none;
-  transition:.18s
+  transition:.18s;
 }
 
-.switch::after{
-  content:"";
-  display:block;
-  width:21px;
-  height:21px;
-  border-radius:50%;
-  background:#fff;
-  transition:.18s
-}
-
-.category.active .switch{
-  background:linear-gradient(90deg,var(--purple),var(--pink))
-}
-
-.category.active .switch::after{
-  transform:translateX(20px)
-}
-
-.cat-name{
-  font-weight:850;
-  margin-top:11px
-}
-
-.cat-desc{
-  font-size:12px;
-  color:var(--muted);
-  line-height:1.35;
-  margin-top:3px
-}
-
-.continue-note{
-  font-size:12px;
-  color:#8d8d99;
-  text-align:center;
-  margin-top:11px
-}
-
-
-/* =========================
-   SPIEL-EINSTELLUNG
-========================= */
-
-.game-option{
-  padding:16px;
-  border-radius:18px;
-  background:#1d1d25;
-  border:1px solid #2b2b36;
-  margin-top:10px
-}
-
-.game-option-top{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px
-}
-
-.game-option-title{
-  font-weight:850;
-  font-size:15px
-}
-
-.game-option-desc{
-  color:var(--muted);
-  font-size:12px;
-  line-height:1.4;
-  margin-top:4px
-}
-
-.option-switch{
-  width:50px;
-  height:29px;
-  border-radius:999px;
-  background:#3a3a45;
-  padding:4px;
-  flex:none;
-  transition:.18s
-}
-
+.switch::after,
 .option-switch::after{
   content:"";
   display:block;
@@ -421,25 +334,73 @@ p{
   height:21px;
   border-radius:50%;
   background:#fff;
-  transition:.18s
+  transition:.18s;
 }
 
+.category.active .switch,
 .game-option.active .option-switch{
-  background:linear-gradient(90deg,var(--purple),var(--pink))
+  background:linear-gradient(90deg,var(--purple),var(--pink));
+}
+
+.category.active .switch::after{
+  transform:translateX(20px);
 }
 
 .game-option.active .option-switch::after{
-  transform:translateX(21px)
+  transform:translateX(21px);
 }
 
+.cat-name{
+  font-weight:850;
+  margin-top:11px;
+}
 
-/* =========================
-   GAME
-========================= */
+.cat-desc{
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.35;
+  margin-top:3px;
+}
+
+.continue-note{
+  font-size:12px;
+  color:#8d8d99;
+  text-align:center;
+  margin-top:11px;
+}
+
+.game-option{
+  width:100%;
+  padding:16px;
+  border-radius:18px;
+  background:#1d1d25;
+  border:1px solid #2b2b36;
+  margin-top:10px;
+  text-align:left;
+}
+
+.game-option-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.game-option-title{
+  font-weight:850;
+  font-size:15px;
+}
+
+.game-option-desc{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.4;
+  margin-top:4px;
+}
 
 .game-shell{
   padding-top:2px;
-  position:relative
+  position:relative;
 }
 
 .game-head{
@@ -448,11 +409,11 @@ p{
   align-items:center;
   margin-bottom:16px;
   position:relative;
-  z-index:2
+  z-index:2;
 }
 
 .game-head-left{
-  min-width:0
+  min-width:0;
 }
 
 .round-label{
@@ -460,7 +421,7 @@ p{
   color:#8b8b97;
   text-transform:uppercase;
   letter-spacing:.13em;
-  font-weight:800
+  font-weight:800;
 }
 
 .turn-name{
@@ -470,7 +431,7 @@ p{
   margin-top:4px;
   white-space:nowrap;
   overflow:hidden;
-  text-overflow:ellipsis
+  text-overflow:ellipsis;
 }
 
 .status-pill{
@@ -480,13 +441,8 @@ p{
   border:1px solid #2b2b34;
   color:#cfcfd7;
   font-size:12px;
-  font-weight:800
+  font-weight:800;
 }
-
-
-/* =========================
-   PFLICHT-RUNDEN ANZEIGE
-========================= */
 
 .mandatory-round{
   display:flex;
@@ -504,22 +460,13 @@ p{
   letter-spacing:.06em;
   text-transform:uppercase;
   box-shadow:0 8px 25px #ef444422;
-  animation:mandatoryPulse 1.5s ease-in-out infinite
+  animation:mandatoryPulse 1.5s ease-in-out infinite;
 }
 
 @keyframes mandatoryPulse{
-  0%,100%{
-    box-shadow:0 8px 25px #ef444422
-  }
-  50%{
-    box-shadow:0 8px 35px #ef444455
-  }
+  0%,100%{box-shadow:0 8px 25px #ef444422}
+  50%{box-shadow:0 8px 35px #ef444455}
 }
-
-
-/* =========================
-   DECK
-========================= */
 
 .deck-wrap{
   position:relative;
@@ -527,7 +474,7 @@ p{
   min-height:390px;
   max-height:590px;
   margin-bottom:18px;
-  z-index:2
+  z-index:2;
 }
 
 .deck-wrap::after{
@@ -538,18 +485,12 @@ p{
   background:radial-gradient(circle,#8b5cf61a,transparent 68%);
   filter:blur(25px);
   animation:stagePulse 3.8s ease-in-out infinite;
-  pointer-events:none
+  pointer-events:none;
 }
 
 @keyframes stagePulse{
-  0%,100%{
-    opacity:.55;
-    transform:scale(.92)
-  }
-  50%{
-    opacity:1;
-    transform:scale(1.08)
-  }
+  0%,100%{opacity:.55;transform:scale(.92)}
+  50%{opacity:1;transform:scale(1.08)}
 }
 
 .deck-back{
@@ -559,14 +500,14 @@ p{
   background:#2b2738;
   border:1px solid #3a344a;
   transform:rotate(-2.5deg);
-  opacity:.55
+  opacity:.55;
 }
 
 .deck-back.two{
   inset:5px 6px 0;
   transform:rotate(1.7deg);
   opacity:.85;
-  background:#242431
+  background:#242431;
 }
 
 .main-card{
@@ -580,39 +521,39 @@ p{
   flex-direction:column;
   justify-content:space-between;
   padding:22px;
-  background:linear-gradient(160deg,#252039,#17151d)
+  background:linear-gradient(160deg,#252039,#17151d);
 }
 
 .main-card.truth{
   background:
     radial-gradient(circle at 20% 10%,#3b82f64a,transparent 28%),
-    linear-gradient(155deg,#17233c,#16161e 68%)
+    linear-gradient(155deg,#17233c,#16161e 68%);
 }
 
 .main-card.dare{
   background:
     radial-gradient(circle at 20% 10%,#ec48994a,transparent 28%),
-    linear-gradient(155deg,#351a31,#17151d 68%)
+    linear-gradient(155deg,#351a31,#17151d 68%);
 }
 
 .main-card.mandatory{
   background:
     radial-gradient(circle at 20% 10%,#ef44444d,transparent 30%),
-    linear-gradient(155deg,#3a1717,#17151d 68%)
+    linear-gradient(155deg,#3a1717,#17151d 68%);
 }
 
 .card-shine{
   position:absolute;
   inset:0;
   background:linear-gradient(115deg,#ffffff10,transparent 28%,transparent 72%,#ffffff08);
-  pointer-events:none
+  pointer-events:none;
 }
 
 .card-top{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  position:relative
+  position:relative;
 }
 
 .type-badge{
@@ -626,25 +567,25 @@ p{
   font-size:12px;
   text-transform:uppercase;
   letter-spacing:.11em;
-  font-weight:900
+  font-weight:900;
 }
 
 .card-index{
   font-size:12px;
-  color:#b9b9c2
+  color:#b9b9c2;
 }
 
 .card-center{
   position:relative;
   text-align:center;
-  padding:20px 4px
+  padding:20px 4px;
 }
 
 .card-kicker{
   font-size:14px;
   color:#bbb9c5;
   margin-bottom:13px;
-  font-weight:700
+  font-weight:700;
 }
 
 .card-prompt{
@@ -653,24 +594,24 @@ p{
   letter-spacing:-.04em;
   font-weight:900;
   max-width:420px;
-  margin:0 auto
+  margin:0 auto;
 }
 
 .card-bottom{
-  position:relative
+  position:relative;
 }
 
 .chooser{
   font-size:12px;
   color:#a7a5b0;
   text-align:center;
-  margin-bottom:12px
+  margin-bottom:12px;
 }
 
 .choice-row{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:9px
+  gap:9px;
 }
 
 .choice{
@@ -679,11 +620,11 @@ p{
   font-weight:900;
   font-size:16px;
   background:#ffffff0c;
-  border:1px solid #ffffff18
+  border:1px solid #ffffff18;
 }
 
 .choice.truth-btn{
-  background:#2d6fe5
+  background:#2d6fe5;
 }
 
 .choice.truth-btn.disabled{
@@ -691,16 +632,16 @@ p{
   color:#9999a2;
   border-color:#666670;
   cursor:not-allowed;
-  opacity:.65
+  opacity:.65;
 }
 
 .choice.dare-btn{
-  background:#d9357f
+  background:#d9357f;
 }
 
 .choice.dare-btn.mandatory-btn{
   background:linear-gradient(135deg,#ef4444,#dc2626);
-  box-shadow:0 8px 25px #ef444433
+  box-shadow:0 8px 25px #ef444433;
 }
 
 .next-btn{
@@ -710,7 +651,7 @@ p{
   border-radius:16px;
   background:#f5f5f7;
   color:#16161d;
-  font-weight:900
+  font-weight:900;
 }
 
 .game-footer{
@@ -718,7 +659,7 @@ p{
   grid-template-columns:1fr 1fr;
   gap:9px;
   position:relative;
-  z-index:2
+  z-index:2;
 }
 
 .footer-btn{
@@ -727,163 +668,16 @@ p{
   background:#1a1a22;
   border:1px solid #2a2a33;
   color:#bdbdc7;
-  font-weight:750
+  font-weight:750;
 }
 
 .reveal-fade{
-  animation:reveal .35s ease
+  animation:reveal .35s ease;
 }
 
 @keyframes reveal{
-  0%{
-    opacity:.2;
-    transform:scale(.985) rotateX(2deg)
-  }
-  100%{
-    opacity:1;
-    transform:none
-  }
-}
-
-.light-stage{
-  position:absolute;
-  inset:0 -10px auto;
-  height:260px;
-  pointer-events:none;
-  overflow:hidden;
-  z-index:0
-}
-
-.beam{
-  position:absolute;
-  top:-25px;
-  width:70px;
-  height:270px;
-  filter:blur(10px);
-  opacity:.23;
-  transform-origin:50% 0;
-  mix-blend-mode:screen;
-  animation:lightSweep 5.5s ease-in-out infinite
-}
-
-.b1{
-  left:4%;
-  background:linear-gradient(180deg,#7c3aed,transparent);
-  transform:rotate(17deg);
-  animation-delay:-1s
-}
-
-.b2{
-  left:22%;
-  background:linear-gradient(180deg,#ec4899,transparent);
-  transform:rotate(-12deg);
-  animation-delay:-3.2s
-}
-
-.b3{
-  left:40%;
-  background:linear-gradient(180deg,#ef4444,transparent);
-  transform:rotate(8deg);
-  animation-delay:-.8s
-}
-
-.b4{
-  left:56%;
-  background:linear-gradient(180deg,#f59e0b,transparent);
-  transform:rotate(-9deg);
-  animation-delay:-4s
-}
-
-.b5{
-  left:73%;
-  background:linear-gradient(180deg,#22d3ee,transparent);
-  transform:rotate(13deg);
-  animation-delay:-2.2s
-}
-
-.b6{
-  left:90%;
-  background:linear-gradient(180deg,#3b82f6,transparent);
-  transform:rotate(-16deg);
-  animation-delay:-4.7s
-}
-
-.orb{
-  position:absolute;
-  width:12px;
-  height:12px;
-  border-radius:50%;
-  filter:blur(1px);
-  box-shadow:0 0 22px 8px currentColor;
-  animation:floatLight 4s ease-in-out infinite
-}
-
-.o1{
-  left:18%;
-  top:105px;
-  color:#a855f7;
-  background:#c084fc
-}
-
-.o2{
-  left:70%;
-  top:125px;
-  color:#22d3ee;
-  background:#67e8f9;
-  animation-delay:-1.8s
-}
-
-.o3{
-  left:49%;
-  top:75px;
-  color:#f472b6;
-  background:#f9a8d4;
-  animation-delay:-3s
-}
-
-@keyframes lightSweep{
-  0%,100%{
-    opacity:.16;
-    transform:rotate(-12deg) scaleY(.95)
-  }
-  50%{
-    opacity:.34;
-    transform:rotate(12deg) scaleY(1.08)
-  }
-}
-
-@keyframes floatLight{
-  0%,100%{
-    transform:translate3d(0,0,0);
-    opacity:.45
-  }
-  50%{
-    transform:translate3d(24px,22px,0);
-    opacity:1
-  }
-}
-
-.card-player{
-  font-size:clamp(44px,13vw,72px);
-  line-height:.95;
-  letter-spacing:-.065em;
-  font-weight:950;
-  margin:4px auto 18px;
-  max-width:100%;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  background:linear-gradient(100deg,#fff,#d8c8ff 48%,#ffb5db);
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-  text-shadow:0 0 35px #a855f733
-}
-
-.main-card .type-badge{
-  font-size:11px;
-  background:#ffffff12;
-  border-color:#ffffff1c
+  0%{opacity:.2;transform:scale(.985) rotateX(2deg)}
+  100%{opacity:1;transform:none}
 }
 
 .modal{
@@ -893,7 +687,7 @@ p{
   display:grid;
   place-items:end center;
   padding:16px;
-  z-index:20
+  z-index:20;
 }
 
 .sheet{
@@ -904,30 +698,18 @@ p{
   border-radius:26px;
   padding:19px;
   box-shadow:0 -20px 80px #0008;
-  animation:sheetIn .24s ease
-}
-
-@keyframes sheetIn{
-  from{
-    transform:translateY(30px);
-    opacity:0
-  }
-  to{
-    transform:none;
-    opacity:1
-  }
 }
 
 .sheet-head{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:13px
+  margin-bottom:13px;
 }
 
 .sheet-title{
   font-size:20px;
-  font-weight:900
+  font-weight:900;
 }
 
 .setting-row{
@@ -935,23 +717,24 @@ p{
   justify-content:space-between;
   align-items:center;
   padding:14px 0;
-  border-bottom:1px solid #282831
+  border-bottom:1px solid #282831;
+  gap:12px;
 }
 
 .setting-row:last-child{
-  border-bottom:0
+  border-bottom:0;
 }
 
 .setting-label strong{
   display:block;
-  font-size:14px
+  font-size:14px;
 }
 
 .setting-label span{
   display:block;
   font-size:12px;
   color:#8f8f99;
-  margin-top:3px
+  margin-top:3px;
 }
 
 .toast{
@@ -969,26 +752,24 @@ p{
   pointer-events:none;
   transition:.22s;
   z-index:30;
-  white-space:nowrap
+  white-space:nowrap;
 }
 
 .toast.show{
   opacity:1;
-  transform:translateX(-50%)
+  transform:translateX(-50%);
+}
+
+.loading{
+  text-align:center;
+  padding:30px 10px;
+  color:var(--muted);
 }
 
 @media(max-width:380px){
-  h1{
-    font-size:34px
-  }
-
-  .deck-wrap{
-    min-height:360px
-  }
-
-  .card-prompt{
-    font-size:27px
-  }
+  h1{font-size:34px}
+  .deck-wrap{min-height:360px}
+  .card-prompt{font-size:27px}
 }
 </style>
 </head>
@@ -997,498 +778,352 @@ p{
 
 <div class="app">
 
-  <!-- NAME PAGE -->
-  <section id="namesPage" class="page active">
+<!-- =========================
+     NAMEN
+========================= -->
 
-    <div class="topbar">
-      <div class="brand">
-        <div class="brand-mark">✦</div>
-        TruthFlip
-      </div>
+<section id="namesPage" class="page active">
 
-      <button class="icon-btn" aria-label="Info" onclick="showAbout()">?</button>
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark">✦</div>
+      TruthFlip
     </div>
 
-    <div class="hero">
-      <div class="eyebrow">Schritt 1 von 2</div>
+    <button class="icon-btn" onclick="showAbout()">?</button>
+  </div>
 
-      <h1>Wer spielt<br>mit?</h1>
+  <div class="hero">
+    <div class="eyebrow">Schritt 1 von 2</div>
 
-      <p>
-        Füge alle Personen hinzu. Danach wählen wir gemeinsam den Spielstil.
-      </p>
+    <h1>Wer spielt<br>mit?</h1>
+
+    <p>
+      Füge alle Personen hinzu. Danach wählen wir gemeinsam den Spielstil.
+    </p>
+  </div>
+
+  <div class="card setup-card">
+
+    <div class="section-title">
+      <h2>Spieler</h2>
+      <span id="playerCount">0 Personen</span>
     </div>
 
-    <div class="card setup-card">
+    <div class="input-row">
+      <input
+        id="nameInput"
+        class="text-input"
+        maxlength="24"
+        placeholder="Name eingeben…"
+        autocomplete="off"
+      >
 
-      <div class="section-title">
-        <h2>Spieler</h2>
-        <span id="playerCount">0 Personen</span>
-      </div>
-
-      <div class="input-row">
-
-        <input
-          id="nameInput"
-          class="text-input"
-          maxlength="24"
-          placeholder="Name eingeben…"
-          autocomplete="off"
-        >
-
-        <button class="add-btn" onclick="addPlayer()">+</button>
-
-      </div>
-
-      <div id="players" class="players"></div>
-
-      <div id="nameError" class="error hidden">
-        Füge mindestens zwei Personen hinzu.
-      </div>
-
+      <button class="add-btn" onclick="addPlayer()">+</button>
     </div>
 
-    <button class="primary" onclick="goToSettings()">
-      Weiter zu den Einstellungen
+    <div id="players" class="players"></div>
+
+    <div id="nameError" class="error hidden">
+      Füge mindestens zwei Personen hinzu.
+    </div>
+
+  </div>
+
+  <button class="primary" onclick="goToSettings()">
+    Weiter zu den Einstellungen
+  </button>
+
+</section>
+
+
+<!-- =========================
+     EINSTELLUNGEN
+========================= -->
+
+<section id="settingsPage" class="page">
+
+  <div class="topbar">
+
+    <button class="icon-btn" onclick="showPage('namesPage')">
+      ‹
     </button>
 
-  </section>
+    <div class="brand">Spielstil</div>
+
+    <div style="width:42px"></div>
+
+  </div>
+
+  <div class="hero">
+
+    <div class="eyebrow">Schritt 2 von 2</div>
+
+    <h1>
+      Welche Stimmung<br>
+      passt heute?
+    </h1>
+
+    <p>
+      Aktiviere eine oder mehrere Kategorien.
+      Die Karten werden nur aus deiner Auswahl gezogen.
+    </p>
+
+  </div>
 
 
-  <!-- SETTINGS PAGE -->
-  <section id="settingsPage" class="page">
+  <div class="card setup-card">
 
-    <div class="topbar">
+    <div class="section-title">
 
-      <button
-        class="icon-btn"
-        onclick="showPage('namesPage')"
-        aria-label="Zurück"
-      >
-        ‹
-      </button>
+      <h2>Kategorien</h2>
 
-      <div class="brand">Spielstil</div>
-
-      <div style="width:42px"></div>
-
-    </div>
-
-    <div class="hero">
-
-      <div class="eyebrow">Schritt 2 von 2</div>
-
-      <h1>
-        Welche Stimmung<br>
-        passt heute?
-      </h1>
-
-      <p>
-        Aktiviere eine oder mehrere Kategorien.
-        Die Karten werden nur aus deiner Auswahl gezogen.
-      </p>
+      <span id="categoryCount">1 aktiv</span>
 
     </div>
 
-    <div class="card setup-card">
-
-      <div class="section-title">
-
-        <h2>Kategorien</h2>
-
-        <span id="categoryCount">1 aktiv</span>
-
+    <div
+      id="categoryGrid"
+      class="category-grid"
+    >
+      <div class="loading">
+        Kategorien werden geladen…
       </div>
+    </div>
 
-      <div class="category-grid">
+    <div id="categoryError" class="error hidden">
+      Mindestens eine Kategorie muss aktiv sein.
+    </div>
 
-        <!-- NORMAL -->
-        <button
-          class="category active"
-          id="cat-normal"
-          onclick="toggleCategory('normal')"
-        >
-
-          <div class="cat-top">
-
-            <div class="cat-icon">◌</div>
-
-            <div class="switch"></div>
-
-          </div>
-
-          <div class="cat-name">
-            Normal
-          </div>
-
-          <div class="cat-desc">
-            Klassische Fragen und unkomplizierte Challenges.
-          </div>
-
-        </button>
+  </div>
 
 
-        <!-- LUSTIG -->
-        <button
-          class="category"
-          id="cat-funny"
-          onclick="toggleCategory('funny')"
-        >
+  <!-- SPIELOPTIONEN -->
 
-          <div class="cat-top">
+  <div class="card setup-card">
 
-            <div class="cat-icon">✦</div>
+    <div class="section-title">
 
-            <div class="switch"></div>
+      <h2>Spieloptionen</h2>
 
-          </div>
-
-          <div class="cat-name">
-            Lustig
-          </div>
-
-          <div class="cat-desc">
-            Mehr Quatsch, verrückte Fragen und Lacher.
-          </div>
-
-        </button>
-
-
-        <!-- PEINLICH -->
-        <button
-          class="category"
-          id="cat-embarrassing"
-          onclick="toggleCategory('embarrassing')"
-        >
-
-          <div class="cat-top">
-
-            <div class="cat-icon">😳</div>
-
-            <div class="switch"></div>
-
-          </div>
-
-          <div class="cat-name">
-            Peinlich
-          </div>
-
-          <div class="cat-desc">
-            Unangenehme Fragen und richtig peinliche Momente.
-          </div>
-
-        </button>
-
-
-        <!-- FREAKY -->
-        <button
-          class="category"
-          id="cat-freaky"
-          onclick="toggleCategory('freaky')"
-        >
-
-          <div class="cat-top">
-
-            <div class="cat-icon">♥</div>
-
-            <div class="switch"></div>
-
-          </div>
-
-          <div class="cat-name">
-            Freaky
-          </div>
-
-          <div class="cat-desc">
-            Romantische und leicht freche Aufgaben.
-          </div>
-
-        </button>
-
-
-        <!-- EXTREM FREAKY -->
-        <button
-          class="category"
-          id="cat-extreme"
-          onclick="toggleCategory('extreme')"
-        >
-
-          <div class="cat-top">
-
-            <div class="cat-icon">🔥</div>
-
-            <div class="switch"></div>
-
-          </div>
-
-          <div class="cat-name">
-            Extrem Freaky
-          </div>
-
-          <div class="cat-desc">
-            Mutige romantische Challenges für die Gruppe.
-          </div>
-
-        </button>
-
-      </div>
-
-      <div id="categoryError" class="error hidden">
-        Mindestens eine Kategorie muss aktiv sein.
-      </div>
+      <span>Optional</span>
 
     </div>
 
+    <button
+      class="game-option"
+      id="mandatoryRoundOption"
+      onclick="toggleMandatoryRounds()"
+    >
 
-    <!-- SPIELOPTIONEN -->
+      <div class="game-option-top">
 
-    <div class="card setup-card">
+        <div>
 
-      <div class="section-title">
-
-        <h2>Spieloptionen</h2>
-
-        <span>Optional</span>
-
-      </div>
-
-
-      <button
-        class="game-option"
-        id="mandatoryRoundOption"
-        onclick="toggleMandatoryRounds()"
-      >
-
-        <div class="game-option-top">
-
-          <div>
-
-            <div class="game-option-title">
-              Zufällige Pflicht-Runde
-            </div>
-
-            <div class="game-option-desc">
-              Jede neue Runde hat eine 1-in-10-Chance.
-              Wenn sie ausgelöst wird, muss jeder Spieler
-              in dieser Runde Pflicht wählen.
-            </div>
-
+          <div class="game-option-title">
+            Zufällige Pflicht-Runde
           </div>
 
-          <div class="option-switch"></div>
+          <div class="game-option-desc">
+            Jede neue Runde hat eine 1-in-10-Chance.
+            Wenn sie ausgelöst wird, muss jeder Spieler
+            in dieser Runde Pflicht wählen.
+          </div>
 
         </div>
 
-      </button>
+        <div class="option-switch"></div>
 
-    </div>
+      </div>
 
-
-    <button class="primary" onclick="startGame()">
-      Spiel starten
     </button>
 
-    <div class="continue-note">
-      Du kannst später jederzeit zurück zu den Einstellungen.
+  </div>
+
+
+  <button class="primary" onclick="startGame()">
+    Spiel starten
+  </button>
+
+  <div class="continue-note">
+    Du kannst später jederzeit zurück zu den Einstellungen.
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SPIEL
+========================= -->
+
+<section id="gamePage" class="page">
+
+  <div class="topbar">
+
+    <button
+      class="icon-btn"
+      onclick="backToSettings()"
+      aria-label="Einstellungen"
+    >
+      ⚙
+    </button>
+
+    <div class="brand">
+      TruthFlip
     </div>
 
-  </section>
+    <button
+      class="icon-btn"
+      onclick="restartGame()"
+      aria-label="Neu starten"
+    >
+      ↻
+    </button>
+
+  </div>
 
 
-  <!-- GAME PAGE -->
-  <section id="gamePage" class="page">
+  <div class="game-shell">
 
-    <div class="topbar">
+    <div class="game-head">
 
-      <button
-        class="icon-btn"
-        onclick="backToSettings()"
-        aria-label="Einstellungen"
-      >
-        ⚙
-      </button>
+      <div class="game-head-left">
 
-      <div class="brand">
-        TruthFlip
+        <div class="round-label" id="roundLabel">
+          Runde 1
+        </div>
+
+        <div class="turn-name" id="turnName">
+          Bereit?
+        </div>
+
       </div>
 
-      <button
-        class="icon-btn"
-        onclick="restartGame()"
-        aria-label="Neu starten"
-      >
-        ↻
-      </button>
+      <div class="status-pill" id="categoryPill">
+        Normal
+      </div>
 
     </div>
 
 
-    <div class="game-shell">
-
-      <div class="light-stage" aria-hidden="true">
-
-        <i class="beam b1"></i>
-        <i class="beam b2"></i>
-        <i class="beam b3"></i>
-        <i class="beam b4"></i>
-        <i class="beam b5"></i>
-        <i class="beam b6"></i>
-
-        <i class="orb o1"></i>
-        <i class="orb o2"></i>
-        <i class="orb o3"></i>
-
-      </div>
+    <div
+      id="mandatoryRoundBanner"
+      class="mandatory-round hidden"
+    >
+      ! PFLICHT-RUNDE !
+    </div>
 
 
-      <div class="game-head">
+    <div class="deck-wrap">
 
-        <div class="game-head-left">
+      <div class="deck-back"></div>
+      <div class="deck-back two"></div>
 
-          <div class="round-label" id="roundLabel">
+      <article id="mainCard" class="main-card">
+
+        <div class="card-shine"></div>
+
+        <div class="card-top">
+
+          <div id="typeBadge" class="type-badge">
+            Wahrheit oder Pflicht
+          </div>
+
+          <div id="cardIndex" class="card-index">
             Runde 1
           </div>
 
-          <div class="turn-name" id="turnName">
-            Bereit?
+        </div>
+
+
+        <div class="card-center">
+
+          <div class="card-kicker" id="cardKicker">
+            Jetzt ist dran
+          </div>
+
+          <div id="cardPlayer" class="card-player">
+            —
+          </div>
+
+          <div id="cardPrompt" class="card-prompt">
+            Wähle Wahrheit oder Pflicht.
           </div>
 
         </div>
 
-        <div class="status-pill" id="categoryPill">
-          Normal
-        </div>
 
-      </div>
+        <div class="card-bottom">
 
-
-      <!-- PFLICHT-RUNDEN-ANZEIGE -->
-
-      <div
-        id="mandatoryRoundBanner"
-        class="mandatory-round hidden"
-      >
-        ! PFLICHT-RUNDE !
-      </div>
-
-
-      <div class="deck-wrap" id="deckWrap">
-
-        <div class="deck-back"></div>
-        <div class="deck-back two"></div>
-
-        <article id="mainCard" class="main-card">
-
-          <div class="card-shine"></div>
-
-          <div class="card-top">
-
-            <div id="typeBadge" class="type-badge">
-              Wahrheit oder Pflicht
-            </div>
-
-            <div id="cardIndex" class="card-index">
-              Runde 1
-            </div>
-
+          <div class="chooser">
+            Was soll
+            <span id="chooserName">du</span>
+            machen?
           </div>
 
-
-          <div class="card-center">
-
-            <div class="card-kicker" id="cardKicker">
-              Jetzt ist dran
-            </div>
-
-            <div id="cardPlayer" class="card-player">
-              —
-            </div>
-
-            <div id="cardPrompt" class="card-prompt">
-              Wähle Wahrheit oder Pflicht.
-            </div>
-
-          </div>
-
-
-          <div class="card-bottom">
-
-            <div class="chooser">
-              Was soll
-              <span id="chooserName">du</span>
-              machen?
-            </div>
-
-
-            <!-- AUSWAHL -->
-
-            <div
-              class="choice-row"
-              id="choiceRow"
-            >
-
-              <button
-                class="choice truth-btn"
-                id="truthButton"
-                onclick="reveal('truth')"
-              >
-                Wahrheit
-              </button>
-
-              <button
-                class="choice dare-btn"
-                id="dareButton"
-                onclick="reveal('dare')"
-              >
-                Pflicht
-              </button>
-
-            </div>
-
-
-            <!-- NÄCHSTE KARTE -->
+          <div class="choice-row" id="choiceRow">
 
             <button
-              class="next-btn hidden"
-              id="nextButton"
-              onclick="nextTurn()"
+              class="choice truth-btn"
+              id="truthButton"
+              onclick="reveal('truth')"
             >
-              Nächste Karte →
+              Wahrheit
+            </button>
+
+            <button
+              class="choice dare-btn"
+              id="dareButton"
+              onclick="reveal('dare')"
+            >
+              Pflicht
             </button>
 
           </div>
 
-        </article>
+          <button
+            class="next-btn hidden"
+            id="nextButton"
+            onclick="nextTurn()"
+          >
+            Nächste Karte →
+          </button>
 
-      </div>
+        </div>
 
-
-      <div class="game-footer">
-
-        <button
-          class="footer-btn"
-          onclick="skipCurrent()"
-        >
-          Karte überspringen
-        </button>
-
-        <button
-          class="footer-btn"
-          onclick="openGameSettings()"
-        >
-          Spiel ändern
-        </button>
-
-      </div>
+      </article>
 
     </div>
 
-  </section>
+
+    <div class="game-footer">
+
+      <button
+        class="footer-btn"
+        onclick="skipCurrent()"
+      >
+        Karte überspringen
+      </button>
+
+      <button
+        class="footer-btn"
+        onclick="openGameSettings()"
+      >
+        Spiel ändern
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
 
 </div>
 
 
-<!-- MODAL -->
+<!-- =========================
+     MODAL
+========================= -->
 
 <div
   id="modal"
@@ -1531,331 +1166,154 @@ p{
 
 <script>
 
+/* =========================================================
+   WOP.JSON LADEN
+   =========================================================
+
+   Alle Kategorien, Fragen und Aufgaben kommen ausschließlich
+   aus dieser Datei.
+
+   Wichtig:
+   index.html enthält KEINE Fragen mehr.
+========================================================= */
+
+let decks = {};
+
+
+/* =========================================================
+   SPIEL-STATE
+========================================================= */
+
 const state = {
 
   players: [],
 
-  categories: {
-    normal:true,
-    funny:false,
-    embarrassing:false,
-    freaky:false,
-    extreme:false
-  },
+  categories: {},
 
-  /* =========================
-     SPIELER-REIHENFOLGE
-  ========================= */
+  currentPlayerIndex: 0,
 
-  currentPlayerIndex:0,
+  currentPlayer: null,
 
-  currentPlayer:null,
+  round: 1,
 
-  /*
-    Runde beginnt bei 1.
+  mandatoryRound: false,
 
-    Eine Runde ist erst beendet,
-    wenn jeder Spieler einmal dran war.
-  */
-  round:1,
+  mandatoryRoundsEnabled: false,
 
-  /*
-    Wird nur zu Beginn einer neuen
-    Runde zufällig bestimmt.
-  */
-  mandatoryRound:false,
+  lastType: null,
 
-  mandatoryRoundsEnabled:false,
+  usedTruth: new Set(),
 
-  /*
-    Merkt, ob der aktuelle Spieler
-    bereits eine Karte gewählt hat.
-  */
-  lastType:null,
+  usedDare: new Set(),
 
-  usedTruth:new Set(),
-
-  usedDare:new Set(),
-
-  gameStarted:false
+  gameStarted: false
 
 };
 
 
-/* =========================
-   FRAGEN / AUFGABEN
-========================= */
+/* =========================================================
+   WOP.JSON LADEN
+========================================================= */
 
-const decks = {
+async function loadWop(){
 
-  normal: {
+  try{
 
-    truth: [
+    const response = await fetch('wop.json', {
+      cache:'no-cache'
+    });
 
-      "Was war dein peinlichster Moment?",
+    if(!response.ok){
+      throw new Error(
+        `HTTP ${response.status}`
+      );
+    }
 
-      "Welche Sache weiß fast niemand über dich?",
+    const data = await response.json();
 
-      "Was würdest du gerne einmal ausprobieren?",
+    /*
+      Unterstützt beide Varianten:
 
-      "Was war deine spontanste Entscheidung?",
+      {
+        "categories": {
+          ...
+        }
+      }
 
-      "Welche Angewohnheit an dir findest du selbst lustig?",
+      oder direkt:
 
-      "Was war dein letzter großer Lachanfall?",
+      {
+        "normal": {...},
+        "funny": {...}
+      }
+    */
 
-      "Welche Person aus der Runde kennst du am besten?",
+    if(data.categories){
 
-      "Was war das Mutigste, das du bisher gemacht hast?",
+      decks = data.categories;
 
-      "Welche kleine Lüge erzählst du manchmal?",
+    }else{
 
-      "Was würdest du an deinem Alltag sofort ändern?"
+      decks = data;
 
-    ],
+    }
 
-    dare: [
 
-      "Mach 10 Kniebeugen.",
+    /*
+      Kategorien aus der JSON-Datei erzeugen.
+    */
 
-      "Sing den Refrain eines Liedes deiner Wahl.",
+    state.categories = {};
 
-      "Halte 20 Sekunden lang eine verrückte Pose.",
+    Object.keys(decks).forEach(cat => {
 
-      "Imitiere eine Person aus der Runde.",
+      state.categories[cat] = true;
 
-      "Erzähle einen richtig schlechten Witz.",
+    });
 
-      "Sprich 20 Sekunden wie ein Nachrichtensprecher.",
 
-      "Mach 10 Sekunden deinen besten Roboter-Tanz.",
+    renderCategories();
 
-      "Stehe 15 Sekunden auf einem Bein.",
+    updateCategoryCount();
 
-      "Mach eine dramatische Filmszene nach.",
+  }catch(error){
 
-      "Nenne fünf Dinge, die du an der Person rechts von dir magst."
+    console.error(
+      'wop.json konnte nicht geladen werden:',
+      error
+    );
 
-    ]
+    document.getElementById('categoryGrid').innerHTML = `
 
-  },
+      <div class="error" style="padding:10px">
 
+        wop.json konnte nicht geladen werden.
 
-  funny: {
+        <br><br>
 
-    truth: [
+        Prüfe, ob die Datei wirklich neben
+        index.html liegt.
 
-      "Was ist das Dümmste, das du je gegoogelt hast?",
+      </div>
 
-      "Welche seltsame Angewohnheit hast du?",
-
-      "Was war dein peinlichster Versprecher?",
-
-      "Wer aus der Runde wäre am schlechtesten als Geheimagent?",
-
-      "Was ist dein unnötigstes Talent?",
-
-      "Was ist dein lustigster Autokorrektur-Moment?",
-
-      "Welches Tier beschreibt deinen Charakter am besten?",
-
-      "Was war der sinnloseste Kauf, den du je gemacht hast?",
-
-      "Welche drei Wörter beschreiben dich, wenn du hungrig bist?",
-
-      "Was würdest du niemals freiwillig vor Publikum tun?"
-
-    ],
-
-    dare: [
-
-      "Laufe 15 Sekunden wie ein Model.",
-
-      "Rede 30 Sekunden mit einer extrem hohen Stimme.",
-
-      "Spiele 20 Sekunden lang einen Nachrichtensprecher.",
-
-      "Erfinde eine Werbung für einen beliebigen Gegenstand im Raum.",
-
-      "Mach den schlechtesten Tanz, den du kannst.",
-
-      "Tu so, als würdest du gerade einen Oscar gewinnen.",
-
-      "Sprich einen Satz, als wärst du ein Bösewicht.",
-
-      "Imitiere dein Lieblingstier so überzeugend wie möglich.",
-
-      "Erfinde in 20 Sekunden eine völlig neue Sportart.",
-
-      "Verhalte dich 15 Sekunden wie eine schlecht programmierte KI."
-
-    ]
-
-  },
-
-
-  embarrassing: {
-
-    truth: [
-
-      "Was war dein allerpeinlichster Moment?",
-
-      "Hast du schon einmal jemandem gewunken, der gar nicht dir gewunken hat?",
-
-      "Was ist das Peinlichste, das dir in der Schule passiert ist?",
-
-      "Welche Nachricht hast du schon einmal an die falsche Person geschickt?",
-
-      "Was war dein schlimmster Versprecher?",
-
-      "Hast du schon einmal so getan, als hättest du etwas verstanden?",
-
-      "Was ist etwas, wofür du dich heute noch ein bisschen schämst?",
-
-      "Was war dein peinlichster Spitzname?",
-
-      "Wann hast du dich zuletzt richtig blamiert?",
-
-      "Was ist dein unangenehmster Moment vor anderen Menschen?"
-
-    ],
-
-    dare: [
-
-      "Lies deinen letzten Satz mit einer völlig übertriebenen Stimme vor.",
-
-      "Mach 20 Sekunden lang einen peinlichen Tanz.",
-
-      "Sag einen völlig normalen Satz so dramatisch wie möglich.",
-
-      "Stell dich hin und posiere 15 Sekunden wie ein Superstar.",
-
-      "Imitiere deinen eigenen peinlichsten Moment.",
-
-      "Sprich 20 Sekunden lang nur in Fragen.",
-
-      "Mach eine übertriebene Werbepräsentation für deinen Schuh.",
-
-      "Laufe einmal durch den Raum wie auf einem Laufsteg.",
-
-      "Erfinde einen peinlichen Künstlernamen für dich.",
-
-      "Mach 15 Sekunden lang deine beste schlechte Schauspielszene."
-
-    ]
-
-  },
-
-
-  freaky: {
-
-    truth: [
-
-      "Wer aus der Runde ist deiner Meinung nach am sympathischsten?",
-
-      "Was findest du bei einer Person besonders attraktiv?",
-
-      "Hast du schon einmal für jemanden geschwärmt?",
-
-      "Was wäre für dich ein perfektes Date?",
-
-      "Welche romantische Geste findest du besonders süß?",
-
-      "Was ist dein größtes Green Flag bei einer Person?",
-
-      "Was wäre dein perfekter erster Kuss?",
-
-      "Wer aus der Runde könnte dich am ehesten zum Lachen bringen?",
-
-      "Was ist das süßeste Kompliment, das du bekommen hast?",
-
-      "Würdest du eher Händchen halten oder umarmt werden?"
-
-    ],
-
-    dare: [
-
-      "Gib einer Person deiner Wahl ein ehrliches Kompliment.",
-
-      "Halte 20 Sekunden Händchen mit einer Person deiner Wahl.",
-
-      "Gib einer Person deiner Wahl einen freundschaftlichen Wangenkuss, wenn beide einverstanden sind.",
-
-      "Halte 20 Sekunden intensiven Blickkontakt mit einer Person deiner Wahl.",
-
-      "Mach einer Person deiner Wahl ein besonders süßes Kompliment.",
-
-      "Tanze 20 Sekunden langsam mit einer Person deiner Wahl.",
-
-      "Gib einer Person deiner Wahl eine freundschaftliche Umarmung, wenn beide einverstanden sind.",
-
-      "Sag einer Person deiner Wahl drei Dinge, die du an ihr magst.",
-
-      "Setz dich für eine Runde neben eine Person deiner Wahl.",
-
-      "Mach für eine Person deiner Wahl eine kleine romantische Geste."
-
-    ]
-
-  },
-
-
-  extreme: {
-
-    truth: [
-
-      "Wer aus der Runde wäre am ehesten dein Date?",
-
-      "Mit wem aus der Runde würdest du gerne einmal einen romantischen Abend verbringen?",
-
-      "Was wäre das Mutigste, das du bei einem Date machen würdest?",
-
-      "Was ist für dich romantischer: ein Kuss oder eine lange Umarmung?",
-
-      "Was wäre dein absolutes Traumdate?",
-
-      "Was müsste eine Person tun, damit du sofort nervös wirst?",
-
-      "Was ist das Romantischste, das du jemals gemacht hast?",
-
-      "Welche Art von Kompliment bringt dich sofort zum Lächeln?"
-
-    ],
-
-    dare: [
-
-      "Halte 30 Sekunden intensiven Blickkontakt mit einer Person deiner Wahl.",
-
-      "Mach einer Person deiner Wahl ein sehr persönliches Kompliment.",
-
-      "Tanze 30 Sekunden mit einer Person deiner Wahl.",
-
-      "Halte 30 Sekunden Händchen mit einer Person deiner Wahl.",
-
-      "Sag einer Person deiner Wahl, warum du sie sympathisch findest.",
-
-      "Mach einer Person deiner Wahl eine kleine romantische Überraschung.",
-
-      "Setz dich für die nächste Runde neben eine Person deiner Wahl.",
-
-      "Gib einer Person deiner Wahl eine lange freundschaftliche Umarmung, wenn beide einverstanden sind."
-
-    ]
+    `;
 
   }
 
-};
+}
 
 
-/* =========================
+/* =========================================================
    SEITEN
-========================= */
+========================================================= */
 
 function showPage(id){
 
   document
     .querySelectorAll('.page')
-    .forEach(p => p.classList.remove('active'));
+    .forEach(p =>
+      p.classList.remove('active')
+    );
 
   document
     .getElementById(id)
@@ -1869,13 +1327,14 @@ function showPage(id){
 }
 
 
-/* =========================
+/* =========================================================
    SPIELER
-========================= */
+========================================================= */
 
 function initials(name){
 
-  const parts = name.trim().split(/\s+/);
+  const parts =
+    name.trim().split(/\s+/);
 
   return (
     (parts[0]?.[0] || '') +
@@ -1895,19 +1354,25 @@ function addPlayer(){
 
   if(!name) return;
 
+
   if(
     state.players.some(
-      p => p.toLowerCase() === name.toLowerCase()
+      p =>
+        p.toLowerCase() ===
+        name.toLowerCase()
     )
   ){
 
-    showToast('Diesen Namen gibt es schon.');
+    showToast(
+      'Diesen Namen gibt es schon.'
+    );
 
     input.focus();
 
     return;
 
   }
+
 
   state.players.push(name);
 
@@ -1922,26 +1387,25 @@ function addPlayer(){
 
 document
   .getElementById('nameInput')
-  .addEventListener('keydown', e => {
+  .addEventListener(
+    'keydown',
+    e => {
 
-    if(e.key === 'Enter'){
-      addPlayer();
+      if(e.key === 'Enter'){
+        addPlayer();
+      }
+
     }
-
-  });
+  );
 
 
 function removePlayer(index){
 
   state.players.splice(index,1);
 
-  /*
-    Falls ein Spieler vor dem Start
-    entfernt wird, bleibt der Index gültig.
-  */
-
   if(
-    state.currentPlayerIndex >= state.players.length
+    state.currentPlayerIndex >=
+    state.players.length
   ){
 
     state.currentPlayerIndex = 0;
@@ -1958,13 +1422,15 @@ function renderPlayers(){
   const box =
     document.getElementById('players');
 
-  document.getElementById('playerCount')
+  document
+    .getElementById('playerCount')
     .textContent =
       `${state.players.length} ${
         state.players.length === 1
           ? 'Person'
           : 'Personen'
       }`;
+
 
   if(!state.players.length){
 
@@ -1974,6 +1440,7 @@ function renderPlayers(){
     return;
 
   }
+
 
   box.innerHTML =
     state.players.map((name,i) => `
@@ -2026,21 +1493,107 @@ function goToSettings(){
 }
 
 
-/* =========================
-   KATEGORIEN
-========================= */
+/* =========================================================
+   KATEGORIEN AUS WOP.JSON
+========================================================= */
+
+function renderCategories(){
+
+  const grid =
+    document.getElementById('categoryGrid');
+
+  const categories =
+    Object.keys(decks);
+
+
+  if(!categories.length){
+
+    grid.innerHTML =
+      '<div class="error">Keine Kategorien in wop.json gefunden.</div>';
+
+    return;
+
+  }
+
+
+  grid.innerHTML =
+    categories.map(cat => {
+
+      const data = decks[cat] || {};
+
+      const active =
+        state.categories[cat] !== false;
+
+      const name =
+        data.name ||
+        categoryName(cat);
+
+      const icon =
+        data.icon ||
+        '◌';
+
+      const description =
+        data.description ||
+        'Kategorie';
+
+
+      return `
+
+        <button
+          class="category ${active ? 'active' : ''}"
+          id="cat-${escapeHtml(cat)}"
+          onclick="toggleCategory('${escapeJs(cat)}')"
+        >
+
+          <div class="cat-top">
+
+            <div class="cat-icon">
+              ${escapeHtml(icon)}
+            </div>
+
+            <div class="switch"></div>
+
+          </div>
+
+          <div class="cat-name">
+            ${escapeHtml(name)}
+          </div>
+
+          <div class="cat-desc">
+            ${escapeHtml(description)}
+          </div>
+
+        </button>
+
+      `;
+
+    }).join('');
+
+}
+
 
 function toggleCategory(cat){
+
+  if(!decks[cat]) return;
 
   state.categories[cat] =
     !state.categories[cat];
 
-  document
-    .getElementById('cat-' + cat)
-    .classList.toggle(
+
+  const button =
+    document.getElementById(
+      'cat-' + cat
+    );
+
+  if(button){
+
+    button.classList.toggle(
       'active',
       state.categories[cat]
     );
+
+  }
+
 
   updateCategoryCount();
 
@@ -2071,15 +1624,17 @@ function getActiveCategories(){
   return Object
     .keys(state.categories)
     .filter(
-      key => state.categories[key]
+      key =>
+        state.categories[key] &&
+        decks[key]
     );
 
 }
 
 
-/* =========================
-   PFLICHT-RUNDEN EINSTELLUNG
-========================= */
+/* =========================================================
+   PFLICHT-RUNDEN
+========================================================= */
 
 function toggleMandatoryRounds(){
 
@@ -2087,7 +1642,9 @@ function toggleMandatoryRounds(){
     !state.mandatoryRoundsEnabled;
 
   document
-    .getElementById('mandatoryRoundOption')
+    .getElementById(
+      'mandatoryRoundOption'
+    )
     .classList.toggle(
       'active',
       state.mandatoryRoundsEnabled
@@ -2096,39 +1653,26 @@ function toggleMandatoryRounds(){
 }
 
 
-/* =========================
-   NEUE RUNDE ERSTELLEN
-========================= */
-
 function startNewRound(){
 
   /*
-    Nur hier wird die Chance geprüft.
+    Die 10%-Chance wird NUR hier geprüft.
 
-    Dadurch hat eine komplette Runde
-    immer genau eine Chance.
+    Das bedeutet:
 
-    Bei z.B. 4 Spielern:
-
-    Runde 1:
+    Runde 1 -> Chance
     Spieler 1
     Spieler 2
     Spieler 3
     Spieler 4
 
-    Danach:
-
-    Runde 2:
+    Runde 2 -> neue Chance
     Spieler 1
-    ...
+    Spieler 2
+    usw.
   */
 
   if(state.mandatoryRoundsEnabled){
-
-    /*
-      Math.random() >= 0.9
-      bedeutet 10% Wahrscheinlichkeit.
-    */
 
     state.mandatoryRound =
       Math.random() < 0.10;
@@ -2142,13 +1686,15 @@ function startNewRound(){
 }
 
 
-/* =========================
+/* =========================================================
    SPIEL START
-========================= */
+========================================================= */
 
 function startGame(){
 
-  if(getActiveCategories().length === 0){
+  if(
+    getActiveCategories().length === 0
+  ){
 
     document
       .getElementById('categoryError')
@@ -2158,9 +1704,6 @@ function startGame(){
 
   }
 
-  /*
-    Spiel immer komplett neu starten.
-  */
 
   state.round = 1;
 
@@ -2177,9 +1720,9 @@ function startGame(){
 
   state.gameStarted = true;
 
+
   /*
-    Die Chance wird genau einmal
-    für Runde 1 bestimmt.
+    Chance für Runde 1.
   */
 
   startNewRound();
@@ -2191,26 +1734,32 @@ function startGame(){
 }
 
 
-/* =========================
-   AKTUELLEN SPIELER ZEIGEN
-========================= */
+/* =========================================================
+   AKTUELLEN SPIELER
+========================================================= */
 
 function showCurrentTurn(first=false){
 
   if(!state.gameStarted) return;
 
+
   state.currentPlayer =
-    state.players[state.currentPlayerIndex];
+    state.players[
+      state.currentPlayerIndex
+    ];
+
 
   document
     .getElementById('roundLabel')
     .textContent =
       `Runde ${state.round}`;
 
+
   document
     .getElementById('turnName')
     .textContent =
       state.currentPlayer;
+
 
   document
     .getElementById('chooserName')
@@ -2218,12 +1767,11 @@ function showCurrentTurn(first=false){
       state.currentPlayer;
 
 
-  /*
-    Pflicht-Runden-Anzeige
-  */
-
   const banner =
-    document.getElementById('mandatoryRoundBanner');
+    document.getElementById(
+      'mandatoryRoundBanner'
+    );
+
 
   banner.classList.toggle(
     'hidden',
@@ -2231,13 +1779,7 @@ function showCurrentTurn(first=false){
   );
 
 
-  /*
-    Wenn Pflicht-Runde aktiv ist,
-    wird Pflicht hervorgehoben.
-  */
-
   updateChoiceButtons();
-
 
   resetCard();
 
@@ -2297,32 +1839,30 @@ function showCurrentTurn(first=false){
 
 
   if(!first){
+
     animateCard();
+
   }
 
 }
 
 
-/* =========================
+/* =========================================================
    NÄCHSTER SPIELER
-========================= */
+========================================================= */
 
 function nextTurn(){
 
   if(!state.gameStarted) return;
 
 
-  /*
-    Nächster Spieler in fester Reihenfolge.
-  */
-
   state.currentPlayerIndex++;
 
 
   /*
-    Wenn wir nach dem letzten Spieler
-    wieder bei Spieler 1 angekommen sind,
-    ist die komplette Runde vorbei.
+    Jeder Spieler war dran.
+
+    Erst jetzt endet die aktuelle Runde.
   */
 
   if(
@@ -2332,18 +1872,11 @@ function nextTurn(){
 
     state.currentPlayerIndex = 0;
 
-    /*
-      Jetzt erst erhöht sich die Runde.
-    */
-
     state.round++;
 
     /*
-      Jetzt wird für die NEUE Runde
-      die 10%-Chance geprüft.
-
-      Die vorherige Pflicht-Runde
-      endet damit automatisch.
+      Nur hier wird die neue
+      Pflicht-Runde bestimmt.
     */
 
     startNewRound();
@@ -2356,14 +1889,16 @@ function nextTurn(){
 }
 
 
-/* =========================
-   KARTE ZURÜCKSETZEN
-========================= */
+/* =========================================================
+   KARTE RESET
+========================================================= */
 
 function resetCard(){
 
   const card =
-    document.getElementById('mainCard');
+    document.getElementById(
+      'mainCard'
+    );
 
   card.classList.remove(
     'truth',
@@ -2375,50 +1910,62 @@ function resetCard(){
 }
 
 
-/* =========================
-   BUTTONS AKTUALISIEREN
-========================= */
+/* =========================================================
+   BUTTONS
+========================================================= */
 
 function updateChoiceButtons(){
 
   const truthButton =
-    document.getElementById('truthButton');
+    document.getElementById(
+      'truthButton'
+    );
 
   const dareButton =
-    document.getElementById('dareButton');
+    document.getElementById(
+      'dareButton'
+    );
 
 
   if(state.mandatoryRound){
 
     truthButton.disabled = true;
 
-    truthButton.classList.add('disabled');
+    truthButton.classList.add(
+      'disabled'
+    );
 
-    dareButton.classList.add('mandatory-btn');
+    dareButton.classList.add(
+      'mandatory-btn'
+    );
 
   }else{
 
     truthButton.disabled = false;
 
-    truthButton.classList.remove('disabled');
+    truthButton.classList.remove(
+      'disabled'
+    );
 
-    dareButton.classList.remove('mandatory-btn');
+    dareButton.classList.remove(
+      'mandatory-btn'
+    );
 
   }
 
 }
 
 
-/* =========================
+/* =========================================================
    WAHRHEIT / PFLICHT
-========================= */
+========================================================= */
 
 function reveal(type){
 
   /*
     Sicherheit:
-    In einer Pflicht-Runde darf
-    niemals Wahrheit gewählt werden.
+    Wahrheit kann in einer Pflicht-Runde
+    niemals ausgeführt werden.
   */
 
   if(
@@ -2426,7 +1973,9 @@ function reveal(type){
     type === 'truth'
   ){
 
-    showToast('In dieser Runde ist nur Pflicht möglich.');
+    showToast(
+      'In dieser Runde ist nur Pflicht möglich.'
+    );
 
     return;
 
@@ -2474,7 +2023,9 @@ function reveal(type){
 
 
   const card =
-    document.getElementById('mainCard');
+    document.getElementById(
+      'mainCard'
+    );
 
 
   card.className =
@@ -2502,13 +2053,6 @@ function reveal(type){
       } · Runde ${state.round}`;
 
 
-  /*
-    Nach der Auswahl verschwinden
-    Wahrheit und Pflicht.
-
-    Nur "Nächste Karte" bleibt.
-  */
-
   document
     .getElementById('choiceRow')
     .classList.add('hidden');
@@ -2521,29 +2065,99 @@ function reveal(type){
 }
 
 
-/* =========================
-   KARTE ZIEHEN
-========================= */
+/* =========================================================
+   AUFGABE AUS WOP.JSON ZIEHEN
+========================================================= */
 
 function drawPrompt(type){
 
   const active =
     getActiveCategories();
 
+
   const pool = [];
+
 
   active.forEach(cat => {
 
-    pool.push(
-      ...decks[cat][type]
-        .map(text => ({
-          text,
-          cat,
-          key:cat + '|' + text
-        }))
-    );
+    const category =
+      decks[cat];
+
+
+    if(!category) return;
+
+
+    /*
+      WOP.JSON kann entweder:
+
+      "truth": [...]
+
+      oder
+
+      "truth": {
+        "tasks": [...]
+      }
+
+      enthalten.
+    */
+
+    let prompts =
+      category[type];
+
+
+    if(
+      prompts &&
+      !Array.isArray(prompts) &&
+      Array.isArray(prompts.tasks)
+    ){
+
+      prompts =
+        prompts.tasks;
+
+    }
+
+
+    if(!Array.isArray(prompts)){
+      return;
+    }
+
+
+    prompts.forEach(text => {
+
+      if(typeof text !== 'string'){
+        return;
+      }
+
+
+      pool.push({
+
+        text,
+
+        cat,
+
+        key:
+          cat +
+          '|' +
+          type +
+          '|' +
+          text
+
+      });
+
+    });
 
   });
+
+
+  if(!pool.length){
+
+    showToast(
+      'Keine Aufgaben für diese Auswahl gefunden.'
+    );
+
+    return 'Keine Aufgabe verfügbar.';
+
+  }
 
 
   const used =
@@ -2554,9 +2168,15 @@ function drawPrompt(type){
 
   let available =
     pool.filter(
-      item => !used.has(item.key)
+      item =>
+        !used.has(item.key)
     );
 
+
+  /*
+    Wenn alle Aufgaben verbraucht wurden,
+    beginnt der Pool wieder von vorne.
+  */
 
   if(!available.length){
 
@@ -2570,7 +2190,8 @@ function drawPrompt(type){
   const item =
     available[
       Math.floor(
-        Math.random() * available.length
+        Math.random() *
+        available.length
       )
     ];
 
@@ -2589,56 +2210,65 @@ function drawPrompt(type){
 }
 
 
-/* =========================
+/* =========================================================
    ANIMATION
-========================= */
+========================================================= */
 
 function animateCard(){
 
   const card =
-    document.getElementById('mainCard');
+    document.getElementById(
+      'mainCard'
+    );
 
-  card.classList.remove('reveal-fade');
+  card.classList.remove(
+    'reveal-fade'
+  );
 
   void card.offsetWidth;
 
-  card.classList.add('reveal-fade');
+  card.classList.add(
+    'reveal-fade'
+  );
 
 }
 
 
-/* =========================
+/* =========================================================
    ÜBERSPRINGEN
-========================= */
+========================================================= */
 
 function skipCurrent(){
 
-  showToast('Karte übersprungen');
-
-  /*
-    Überspringen zählt ebenfalls als
-    erledigter Zug des aktuellen Spielers.
-  */
+  showToast(
+    'Karte übersprungen'
+  );
 
   nextTurn();
 
 }
 
 
-/* =========================
+/* =========================================================
    EINSTELLUNGEN
-========================= */
+========================================================= */
 
 function backToSettings(){
 
-  showPage('settingsPage');
+  showPage(
+    'settingsPage'
+  );
 
 }
 
 
 function restartGame(){
 
-  if(confirm('Aktuelle Runde neu starten?')){
+  if(
+    confirm(
+      'Aktuelle Runde neu starten?'
+    )
+  ){
 
     startGame();
 
@@ -2711,9 +2341,9 @@ function openGameSettings(){
 }
 
 
-/* =========================
+/* =========================================================
    ABOUT
-========================= */
+========================================================= */
 
 function showAbout(){
 
@@ -2725,16 +2355,14 @@ function showAbout(){
     <p style="margin-bottom:12px">
 
       Ein schnelles, offline spielbares
-      Wahrheit-oder-Pflicht-Spiel mit Fokus
-      auf den eigentlichen Moment.
+      Wahrheit-oder-Pflicht-Spiel.
 
     </p>
 
     <p style="font-size:12px;color:#81818e">
 
-      Die Oberfläche ist bewusst auf eine Hand
-      optimiert und funktioniert ohne Login
-      oder Server.
+      Die Aufgaben und Kategorien werden
+      aus der Datei wop.json geladen.
 
     </p>
 
@@ -2744,19 +2372,21 @@ function showAbout(){
 }
 
 
-/* =========================
+/* =========================================================
    MODAL
-========================= */
+========================================================= */
 
 function openModal(title,html){
 
   document
     .getElementById('sheetTitle')
-    .textContent = title;
+    .textContent =
+      title;
 
   document
     .getElementById('sheetContent')
-    .innerHTML = html;
+    .innerHTML =
+      html;
 
   document
     .getElementById('modal')
@@ -2769,7 +2399,8 @@ function closeModal(e){
 
   if(
     !e ||
-    e.target === document.getElementById('modal')
+    e.target ===
+      document.getElementById('modal')
   ){
 
     document
@@ -2781,13 +2412,13 @@ function closeModal(e){
 }
 
 
-/* =========================
+/* =========================================================
    KATEGORIENAMEN
-========================= */
+========================================================= */
 
 function categoryName(cat){
 
-  return {
+  const names = {
 
     normal:'Normal',
 
@@ -2799,43 +2430,60 @@ function categoryName(cat){
 
     extreme:'Extrem Freaky'
 
-  }[cat] || cat;
+  };
+
+
+  return names[cat] || cat;
 
 }
 
 
-/* =========================
+/* =========================================================
    HTML SICHERHEIT
-========================= */
+========================================================= */
 
 function escapeHtml(s){
 
-  return s.replace(
+  return String(s).replace(
     /[&<>"']/g,
-
     c => ({
+
       '&':'&amp;',
       '<':'&lt;',
       '>':'&gt;',
       '"':'&quot;',
       "'":'&#039;'
-    }[c])
 
+    }[c])
   );
 
 }
 
 
-/* =========================
+function escapeJs(s){
+
+  return String(s)
+    .replace(/\\/g,'\\\\')
+    .replace(/'/g,"\\'")
+    .replace(/\n/g,'\\n')
+    .replace(/\r/g,'\\r');
+
+}
+
+
+/* =========================================================
    TOAST
-========================= */
+========================================================= */
 
 let toastTimer;
+
 
 function showToast(msg){
 
   const t =
-    document.getElementById('toast');
+    document.getElementById(
+      'toast'
+    );
 
   t.textContent = msg;
 
@@ -2845,20 +2493,28 @@ function showToast(msg){
 
   toastTimer =
     setTimeout(
-      () => t.classList.remove('show'),
+      () =>
+        t.classList.remove(
+          'show'
+        ),
       1600
     );
 
 }
 
 
-/* =========================
+/* =========================================================
    START
-========================= */
+========================================================= */
 
 renderPlayers();
 
-updateCategoryCount();
+/*
+  Ganz wichtig:
+  Erst hier wird wop.json geladen.
+*/
+
+loadWop();
 
 </script>
 
