@@ -1,0 +1,149 @@
+{
+  "categories": {
+    "normal": {
+      "name": "Normal",
+      "icon": "◌",
+      "description": "Klassische Fragen und unkomplizierte Challenges.",
+      "truth": [
+        "Was war dein peinlichster Moment?",
+        "Welche Sache weiß fast niemand über dich?",
+        "Was würdest du gerne einmal ausprobieren?",
+        "Was war deine spontanste Entscheidung?",
+        "Welche Angewohnheit an dir findest du selbst lustig?",
+        "Was war dein letzter großer Lachanfall?",
+        "Welche Person aus der Runde kennst du am besten?",
+        "Was war das Mutigste, das du bisher gemacht hast?",
+        "Welche kleine Lüge erzählst du manchmal?",
+        "Was würdest du an deinem Alltag sofort ändern?"
+      ],
+      "dare": [
+        "Mach 10 Kniebeugen.",
+        "Sing den Refrain eines Liedes deiner Wahl.",
+        "Halte 20 Sekunden lang eine verrückte Pose.",
+        "Imitiere eine Person aus der Runde.",
+        "Erzähle einen richtig schlechten Witz.",
+        "Sprich 20 Sekunden wie ein Nachrichtensprecher.",
+        "Mach 10 Sekunden deinen besten Roboter-Tanz.",
+        "Stehe 15 Sekunden auf einem Bein.",
+        "Mach eine dramatische Filmszene nach.",
+        "Nenne fünf Dinge, die du an der Person rechts von dir magst."
+      ]
+    },
+
+    "funny": {
+      "name": "Lustig",
+      "icon": "✦",
+      "description": "Mehr Quatsch, verrückte Fragen und Lacher.",
+      "truth": [
+        "Was ist das Dümmste, das du je gegoogelt hast?",
+        "Welche seltsame Angewohnheit hast du?",
+        "Was war dein peinlichster Versprecher?",
+        "Wer aus der Runde wäre am schlechtesten als Geheimagent?",
+        "Was ist dein unnötigstes Talent?",
+        "Was ist dein lustigster Autokorrektur-Moment?",
+        "Welches Tier beschreibt deinen Charakter am besten?",
+        "Was war der sinnloseste Kauf, den du je gemacht hast?",
+        "Welche drei Wörter beschreiben dich, wenn du hungrig bist?",
+        "Was würdest du niemals freiwillig vor Publikum tun?"
+      ],
+      "dare": [
+        "Laufe 15 Sekunden wie ein Model.",
+        "Rede 30 Sekunden mit einer extrem hohen Stimme.",
+        "Spiele 20 Sekunden lang einen Nachrichtensprecher.",
+        "Erfinde eine Werbung für einen beliebigen Gegenstand im Raum.",
+        "Mach den schlechtesten Tanz, den du kannst.",
+        "Tu so, als würdest du gerade einen Oscar gewinnen.",
+        "Sprich einen Satz, als wärst du ein Bösewicht.",
+        "Imitiere dein Lieblingstier so überzeugend wie möglich.",
+        "Erfinde in 20 Sekunden eine völlig neue Sportart.",
+        "Verhalte dich 15 Sekunden wie eine schlecht programmierte KI."
+      ]
+    },
+
+    "embarrassing": {
+      "name": "Peinlich",
+      "icon": "😳",
+      "description": "Unangenehme Fragen und richtig peinliche Momente.",
+      "truth": [
+        "Was war dein allerpeinlichster Moment?",
+        "Hast du schon einmal jemandem gewunken, der gar nicht dir gewunken hat?",
+        "Was ist das Peinlichste, das dir in der Schule passiert ist?",
+        "Welche Nachricht hast du schon einmal an die falsche Person geschickt?",
+        "Was war dein schlimmster Versprecher?",
+        "Hast du schon einmal so getan, als hättest du etwas verstanden?",
+        "Was ist etwas, wofür du dich heute noch ein bisschen schämst?",
+        "Was war dein peinlichster Spitzname?",
+        "Wann hast du dich zuletzt richtig blamiert?",
+        "Was ist dein unangenehmster Moment vor anderen Menschen?"
+      ],
+      "dare": [
+        "Lies deinen letzten Satz mit einer völlig übertriebenen Stimme vor.",
+        "Mach 20 Sekunden lang einen peinlichen Tanz.",
+        "Sag einen völlig normalen Satz so dramatisch wie möglich.",
+        "Stell dich hin und posiere 15 Sekunden wie ein Superstar.",
+        "Imitiere deinen eigenen peinlichsten Moment.",
+        "Sprich 20 Sekunden lang nur in Fragen.",
+        "Mach eine übertriebene Werbepräsentation für deinen Schuh.",
+        "Laufe einmal durch den Raum wie auf einem Laufsteg.",
+        "Erfinde einen peinlichen Künstlernamen für dich.",
+        "Mach 15 Sekunden lang deine beste schlechte Schauspielszene."
+      ]
+    },
+
+    "freaky": {
+      "name": "Freaky",
+      "icon": "♥",
+      "description": "Romantische und leicht freche Aufgaben.",
+      "truth": [
+        "Wer aus der Runde ist deiner Meinung nach am sympathischsten?",
+        "Was findest du bei einer Person besonders attraktiv?",
+        "Hast du schon einmal für jemanden geschwärmt?",
+        "Was wäre für dich ein perfektes Date?",
+        "Welche romantische Geste findest du besonders süß?",
+        "Was ist dein größtes Green Flag bei einer Person?",
+        "Was wäre dein perfekter erster Kuss?",
+        "Wer aus der Runde könnte dich am ehesten zum Lachen bringen?",
+        "Was ist das süßeste Kompliment, das du bekommen hast?",
+        "Würdest du eher Händchen halten oder umarmt werden?"
+      ],
+      "dare": [
+        "Gib einer Person deiner Wahl ein ehrliches Kompliment.",
+        "Halte 20 Sekunden Händchen mit einer Person deiner Wahl.",
+        "Gib einer Person deiner Wahl einen freundschaftlichen Wangenkuss, wenn beide einverstanden sind.",
+        "Halte 20 Sekunden intensiven Blickkontakt mit einer Person deiner Wahl.",
+        "Mach einer Person deiner Wahl ein besonders süßes Kompliment.",
+        "Tanze 20 Sekunden langsam mit einer Person deiner Wahl.",
+        "Gib einer Person deiner Wahl eine freundschaftliche Umarmung, wenn beide einverstanden sind.",
+        "Sag einer Person deiner Wahl drei Dinge, die du an ihr magst.",
+        "Setz dich für eine Runde neben eine Person deiner Wahl.",
+        "Mach für eine Person deiner Wahl eine kleine romantische Geste."
+      ]
+    },
+
+    "extreme": {
+      "name": "Extrem Freaky",
+      "icon": "🔥",
+      "description": "Mutige romantische Challenges für die Gruppe.",
+      "truth": [
+        "Wer aus der Runde wäre am ehesten dein Date?",
+        "Mit wem aus der Runde würdest du gerne einmal einen romantischen Abend verbringen?",
+        "Was wäre das Mutigste, das du bei einem Date machen würdest?",
+        "Was ist für dich romantischer: ein Kuss oder eine lange Umarmung?",
+        "Was wäre dein absolutes Traumdate?",
+        "Was müsste eine Person tun, damit du sofort nervös wirst?",
+        "Was ist das Romantischste, das du jemals gemacht hast?",
+        "Welche Art von Kompliment bringt dich sofort zum Lächeln?"
+      ],
+      "dare": [
+        "Halte 30 Sekunden intensiven Blickkontakt mit einer Person deiner Wahl.",
+        "Mach einer Person deiner Wahl ein sehr persönliches Kompliment.",
+        "Tanze 30 Sekunden mit einer Person deiner Wahl.",
+        "Halte 30 Sekunden Händchen mit einer Person deiner Wahl.",
+        "Sag einer Person deiner Wahl, warum du sie sympathisch findest.",
+        "Mach einer Person deiner Wahl eine kleine romantische Überraschung.",
+        "Setz dich für die nächste Runde neben eine Person deiner Wahl.",
+        "Gib einer Person deiner Wahl eine lange freundschaftliche Umarmung, wenn beide einverstanden sind."
+      ]
+    }
+  }
+}
