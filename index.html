@@ -7,6 +7,7 @@
 <title>TruthFlip — Wahrheit oder Pflicht</title>
 
 <style>
+
 :root{
   --bg:#0d0d12;
   --panel:#17171f;
@@ -76,6 +77,11 @@ button{
   gap:10px;
   font-weight:850;
   letter-spacing:-.03em;
+}
+
+.brand.clickable{
+  cursor:pointer;
+  user-select:none;
 }
 
 .brand-mark{
@@ -589,11 +595,6 @@ p{
     );
 }
 
-
-/* =========================================================
-   BEWEGTES LICHT AUF DER KARTE
-========================================================= */
-
 .card-shine{
   position:absolute;
   inset:-40%;
@@ -612,9 +613,6 @@ p{
   transform:translate3d(-10%,-10%,0);
 }
 
-
-/* Zweiter, weicher Glow */
-
 .card-shine::before{
   content:"";
   position:absolute;
@@ -630,9 +628,6 @@ p{
 
   animation:cardGlowMove 9s ease-in-out infinite;
 }
-
-
-/* Feiner Lichtstreifen */
 
 .card-shine::after{
   content:"";
@@ -652,9 +647,6 @@ p{
   transform:translateX(-35%);
   animation:cardSweep 5.5s ease-in-out infinite;
 }
-
-
-/* Hauptlicht bewegt sich über die Karte */
 
 @keyframes cardLightMove{
 
@@ -687,11 +679,7 @@ p{
       translate3d(-18%,-12%,0)
       rotate(0deg);
   }
-
 }
-
-
-/* Violetter Licht-Glow */
 
 @keyframes cardGlowMove{
 
@@ -710,11 +698,7 @@ p{
 
     opacity:.9;
   }
-
 }
-
-
-/* Lichtstreifen */
 
 @keyframes cardSweep{
 
@@ -749,9 +733,7 @@ p{
 
     opacity:0;
   }
-
 }
-
 
 .card-top{
   display:flex;
@@ -908,7 +890,6 @@ p{
     opacity:1;
     transform:none;
   }
-
 }
 
 .modal{
@@ -968,6 +949,14 @@ p{
   margin-top:3px;
 }
 
+.secret-content{
+  padding-top:2px;
+}
+
+.secret-content .setting-row{
+  margin-top:8px;
+}
+
 .toast{
   position:fixed;
   left:50%;
@@ -1024,7 +1013,6 @@ p{
 
 <div class="app">
 
-
 <!-- =========================
      NAMEN
 ========================= -->
@@ -1033,7 +1021,10 @@ p{
 
   <div class="topbar">
 
-    <div class="brand">
+    <div
+      class="brand clickable"
+      onclick="secretMenuClick()"
+    >
 
       <div class="brand-mark">
         ✦
@@ -1217,8 +1208,6 @@ p{
   </div>
 
 
-  <!-- SPIELOPTIONEN -->
-
   <div class="card setup-card">
 
     <div class="section-title">
@@ -1299,7 +1288,10 @@ p{
       ⚙
     </button>
 
-    <div class="brand">
+    <div
+      class="brand clickable"
+      onclick="secretMenuClick()"
+    >
       TruthFlip
     </div>
 
@@ -1366,8 +1358,6 @@ p{
         id="mainCard"
         class="main-card"
       >
-
-        <!-- BEWEGTES LICHT -->
 
         <div class="card-shine"></div>
 
@@ -1499,7 +1489,7 @@ p{
 
 
 <!-- =========================
-     MODAL
+     NORMALES MODAL
 ========================= -->
 
 <div
@@ -1542,6 +1532,136 @@ p{
 </div>
 
 
+<!-- =========================
+     SECRET MENU
+========================= -->
+
+<div
+  id="secretModal"
+  class="modal hidden"
+  onclick="closeSecretMenu(event)"
+>
+
+  <div
+    class="sheet"
+    onclick="event.stopPropagation()"
+  >
+
+    <div class="sheet-head">
+
+      <div class="sheet-title">
+        🔒 Secret Menu
+      </div>
+
+      <button
+        class="icon-btn"
+        onclick="closeSecretMenu()"
+        aria-label="Secret Menü schließen"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      id="secretContent"
+      class="secret-content"
+    >
+
+      <p style="margin-bottom:18px;">
+        Hello World
+      </p>
+
+
+      <!-- =========================
+           PFLICHT NÄCHSTE RUNDE
+      ========================= -->
+
+      <div class="setting-row">
+
+        <div class="setting-label">
+
+          <strong>
+            Pflicht-Runde nächste Runde
+          </strong>
+
+          <span>
+            Die nächste neue Runde wird garantiert
+            eine Pflicht-Runde.
+          </span>
+
+        </div>
+
+        <button
+          class="secondary"
+          style="width:auto;padding:10px 13px"
+          onclick="forceNextMandatoryRound()"
+        >
+          Ausführen
+        </button>
+
+      </div>
+
+
+      <!-- =========================
+           SPIELER BEKOMMT PFLICHT
+      ========================= -->
+
+      <div class="setting-row">
+
+        <div class="setting-label">
+
+          <strong>
+            Spieler bekommt Pflicht
+          </strong>
+
+          <span>
+            Spieler auswählen und sofort eine
+            Pflicht-Aufgabe geben.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="input-row"
+        style="margin-top:12px"
+      >
+
+        <input
+          id="secretPlayerInput"
+          class="text-input"
+          maxlength="24"
+          placeholder="Spielername…"
+          autocomplete="off"
+        >
+
+        <button
+          class="add-btn"
+          style="width:auto;padding:0 18px;font-size:14px"
+          onclick="forcePlayerDare()"
+        >
+          Ausführen
+        </button>
+
+      </div>
+
+
+      <div
+        id="secretStatus"
+        class="error hidden"
+      ></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
 <div
   id="toast"
   class="toast"
@@ -1577,13 +1697,27 @@ const state = {
 
   mandatoryRoundsEnabled: false,
 
+  /*
+    Secret-Menü:
+    nächste Runde garantiert Pflicht
+  */
+  forceNextMandatory: false,
+
   lastType: null,
 
   usedTruth: new Set(),
 
   usedDare: new Set(),
 
-  gameStarted: false
+  gameStarted: false,
+
+  /*
+    Secret-Menü:
+    Klickzähler
+  */
+  secretMenuClicks: 0,
+
+  secretMenuClickTimer: null
 
 };
 
@@ -2099,6 +2233,32 @@ function toggleMandatoryRounds(){
 
 function startNewRound(){
 
+  /*
+    SECRET:
+    Nächste Runde garantiert Pflicht
+  */
+
+  if(state.forceNextMandatory){
+
+    state.mandatoryRound = true;
+
+    /*
+      Befehl ist verbraucht.
+    */
+
+    state.forceNextMandatory = false;
+
+    updateSecretStatus();
+
+    return;
+
+  }
+
+
+  /*
+    Normale 10%-Chance
+  */
+
   if(
     state.mandatoryRoundsEnabled
   ){
@@ -2327,7 +2487,6 @@ function nextTurn(){
     state.currentPlayerIndex = 0;
 
     state.round++;
-
 
     startNewRound();
 
@@ -2857,7 +3016,7 @@ function showAbout(){
 
 
 /* =========================================================
-   MODAL
+   NORMALES MODAL
 ========================================================= */
 
 function openModal(
@@ -3023,6 +3182,421 @@ function showToast(msg){
         ),
       1600
     );
+
+}
+
+
+/* =========================================================
+   SECRET MENU
+========================================================= */
+
+/*
+  5 Klicks innerhalb von 10 Sekunden.
+*/
+
+function secretMenuClick(){
+
+  state.secretMenuClicks++;
+
+
+  clearTimeout(
+    state.secretMenuClickTimer
+  );
+
+
+  state.secretMenuClickTimer =
+    setTimeout(() => {
+
+      state.secretMenuClicks = 0;
+
+    },10000);
+
+
+  if(
+    state.secretMenuClicks >= 5
+  ){
+
+    state.secretMenuClicks = 0;
+
+
+    clearTimeout(
+      state.secretMenuClickTimer
+    );
+
+
+    openSecretMenu();
+
+  }
+
+}
+
+
+/* =========================================================
+   SECRET MENU ÖFFNEN
+========================================================= */
+
+function openSecretMenu(){
+
+  document
+    .getElementById(
+      'secretModal'
+    )
+    .classList.remove(
+      'hidden'
+    );
+
+
+  updateSecretStatus();
+
+
+  const input =
+    document.getElementById(
+      'secretPlayerInput'
+    );
+
+
+  if(input){
+
+    input.value = '';
+
+  }
+
+}
+
+
+/* =========================================================
+   SECRET MENU SCHLIESSEN
+========================================================= */
+
+function closeSecretMenu(e){
+
+  if(
+    !e ||
+    e.target ===
+      document.getElementById(
+        'secretModal'
+      )
+  ){
+
+    document
+      .getElementById(
+        'secretModal'
+      )
+      .classList.add(
+        'hidden'
+      );
+
+  }
+
+}
+
+
+/* =========================================================
+   SECRET:
+   NÄCHSTE RUNDE ZUR PFLICHT-RUNDE MACHEN
+========================================================= */
+
+function forceNextMandatoryRound(){
+
+  if(!state.gameStarted){
+
+    showSecretError(
+      'Das Spiel muss zuerst gestartet werden.'
+    );
+
+    return;
+
+  }
+
+
+  state.forceNextMandatory = true;
+
+
+  showToast(
+    'Nächste Runde wird eine Pflicht-Runde.'
+  );
+
+
+  updateSecretStatus();
+
+}
+
+
+/* =========================================================
+   SECRET:
+   SPIELER BEKOMMT PFLICHT
+========================================================= */
+
+function forcePlayerDare(){
+
+  const input =
+    document.getElementById(
+      'secretPlayerInput'
+    );
+
+
+  const name =
+    input.value.trim();
+
+
+  if(!name){
+
+    showSecretError(
+      'Bitte einen Spielernamen eingeben.'
+    );
+
+    return;
+
+  }
+
+
+  if(!state.gameStarted){
+
+    showSecretError(
+      'Das Spiel muss zuerst gestartet werden.'
+    );
+
+    return;
+
+  }
+
+
+  const index =
+    state.players.findIndex(
+      player =>
+        player.toLowerCase() ===
+        name.toLowerCase()
+    );
+
+
+  if(index === -1){
+
+    showSecretError(
+      'Spieler wurde nicht gefunden.'
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Spieler auswählen.
+  */
+
+  state.currentPlayerIndex =
+    index;
+
+
+  state.currentPlayer =
+    state.players[index];
+
+
+  /*
+    Pflicht-Aufgabe ziehen.
+    Die normale Pflicht-Rundenlogik
+    wird NICHT verändert.
+  */
+
+  const prompt =
+    drawPrompt('dare');
+
+
+  document
+    .getElementById(
+      'roundLabel'
+    )
+    .textContent =
+      `Runde ${state.round}`;
+
+
+  document
+    .getElementById(
+      'turnName'
+    )
+    .textContent =
+      state.currentPlayer;
+
+
+  document
+    .getElementById(
+      'chooserName'
+    )
+    .textContent =
+      state.currentPlayer;
+
+
+  /*
+    Kein normaler Pflicht-Runden-Banner,
+    weil es eine Secret-Pflicht ist.
+  */
+
+  document
+    .getElementById(
+      'mandatoryRoundBanner'
+    )
+    .classList.add(
+      'hidden'
+    );
+
+
+  document
+    .getElementById(
+      'typeBadge'
+    )
+    .textContent =
+      'PFLICHT · SECRET';
+
+
+  document
+    .getElementById(
+      'cardKicker'
+    )
+    .textContent =
+      'Secret Pflicht';
+
+
+  document
+    .getElementById(
+      'cardPlayer'
+    )
+    .textContent =
+      state.currentPlayer;
+
+
+  document
+    .getElementById(
+      'cardPrompt'
+    )
+    .textContent =
+      prompt;
+
+
+  document
+    .getElementById(
+      'cardIndex'
+    )
+    .textContent =
+      `P · Runde ${state.round}`;
+
+
+  const card =
+    document.getElementById(
+      'mainCard'
+    );
+
+
+  card.className =
+    'main-card dare reveal-fade';
+
+
+  state.lastType =
+    'dare';
+
+
+  /*
+    Auswahlbuttons verstecken.
+  */
+
+  document
+    .getElementById(
+      'choiceRow'
+    )
+    .classList.add(
+      'hidden'
+    );
+
+
+  /*
+    Nächste-Karte-Button anzeigen.
+  */
+
+  document
+    .getElementById(
+      'nextButton'
+    )
+    .classList.remove(
+      'hidden'
+    );
+
+
+  /*
+    Secret-Menü schließen.
+  */
+
+  closeSecretMenu();
+
+
+  showToast(
+    `${state.currentPlayer} bekommt Pflicht.`
+  );
+
+}
+
+
+/* =========================================================
+   SECRET FEHLER
+========================================================= */
+
+function showSecretError(message){
+
+  const error =
+    document.getElementById(
+      'secretStatus'
+    );
+
+
+  error.textContent =
+    message;
+
+
+  error.classList.remove(
+    'hidden'
+  );
+
+
+  setTimeout(() => {
+
+    error.classList.add(
+      'hidden'
+    );
+
+  },2500);
+
+}
+
+
+/* =========================================================
+   SECRET STATUS
+========================================================= */
+
+function updateSecretStatus(){
+
+  const content =
+    document.getElementById(
+      'secretStatus'
+    );
+
+
+  if(!content) return;
+
+
+  if(state.forceNextMandatory){
+
+    content.textContent =
+      '✓ Die nächste Runde ist bereits als Pflicht-Runde markiert.';
+
+    content.classList.remove(
+      'hidden'
+    );
+
+  }else{
+
+    content.classList.add(
+      'hidden'
+    );
+
+  }
 
 }
 
